@@ -16,7 +16,7 @@ generated. Every number below is a count of providers.
 | reward | 11 | 10 | id 100%, created_at 90%, status 80%, type 70%, description 50%, name 50%, updated_at 50% | rewards 10, reward 3, offers 3, redemptions 3 |
 | referral | 7 | 7 | id 57% | referrals 5, referral 3, advocates 1 |
 
-Cohort: 77 providers with harvested OpenAPI, 17 crosswalks. Of the providers exposing a member: 43% create, 71% list, 50% fetch, 21% update, 7% delete. Generated 2026-11-10 by build.py.
+Cohort: 77 providers with harvested OpenAPI, 17 crosswalks. Of the providers exposing a member: 43% create, 71% list, 50% fetch, 21% update, 7% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The

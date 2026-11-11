@@ -1,7 +1,7 @@
 provider: regal-entertainment-group
 apis_io: https://apis.io/providers/regal-entertainment-group/
 context: loyalty
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   member:
     path_segment:
