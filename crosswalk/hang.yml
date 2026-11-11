@@ -1,0 +1,34 @@
+provider: hang
+apis_io: https://apis.io/providers/hang/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/hang-openapi.json#GET /v2/admin/program-segments/{id}/members
+  reward:
+    path_segment:
+    - redemptions
+    - rewards
+    properties:
+      created_at: created_at
+      id: uuid
+      status:
+      - state
+      - status
+      description: description
+      name: name
+      type: reward_type
+      updated_at: updated_at
+      image_url: image_url
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/hang-openapi.json#GET /v2/admin/rewards/{reward_uuid}
+    - openapi/_original/hang-openapi.json#GET /v2/program-memberships/{program_membership_id}/redemptions
+    - openapi/_original/hang-openapi.json#GET /v2/program-memberships/{program_membership_id}/rewards
+    - openapi/_original/hang-openapi.json#GET /wallets/{wallet_address}/redemptions
+    - openapi/_original/hang-openapi.json#PATCH /v2/admin/rewards/{reward_uuid}

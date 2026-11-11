@@ -1,0 +1,72 @@
+context: loyalty
+name: Loyalty
+intro: >-
+  The common loyalty vocabulary -- the members enrolled in a programme, the points they earn
+  and spend, the rewards they redeem, the tiers they climb and the referrals they make --
+  distilled from the APIs that already exist.
+tags: [Loyalty, Rewards, Loyalty & Incentives, Loyalty Programs, Customer Loyalty, Referral, Referral Marketing, Incentives]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, external_id]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on, enrolled_at, joined_at]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified]
+  metadata: [meta_data, custom_fields, custom, attributes, properties]
+  status: [state, member_status, reward_status, active, is_active]
+  name: [title, display_name, label]
+  description: [details, notes, note, terms]
+  member_id: [member, customer_id, customer, profile_id, user_id, account_id, loyalty_id, person_id, contact_id]
+  points: [points_balance, balance, point_balance, available_points, current_points, loyalty_points, points_amount, amount]
+
+concepts:
+  member:
+    segments: [members, member, loyalty_members, customers@loyalty|programs|rewards, profiles@loyalty, accounts@loyalty|rewards, participants]
+    aliases:
+      email: [email_address, emails]
+      first_name: [firstname, given_name]
+      last_name: [lastname, surname, family_name]
+      phone: [phone_number, mobile]
+      tier_id: [tier, tier_name, level, membership_level, status_level]
+      lifetime_points: [total_points_earned, points_earned, lifetime_points_earned]
+  # points_transaction was measured and dropped: 4 providers, no shared property -- points are
+  # a balance on the member, or an event, almost everywhere.
+  reward:
+    requires: [member]
+    segments: [rewards, reward, offers, offer, perks, catalog@rewards|loyalty, redemptions, redemption, coupons@loyalty|rewards]
+    aliases:
+      points_cost: [cost, price, points_required, point_cost, redemption_points, points_value]
+      type: [reward_type, kind, category]
+      redeemed_at: [redeemed, redemption_date, used_at]
+  # tier was measured and dropped: 2 providers expose tiers as a resource.
+  referral:
+    segments: [referrals, referral, invites@referral, advocates, referral_codes]
+    aliases:
+      referrer_id: [referrer, advocate_id, advocate, inviter_id, sender_id]
+      referee_email: [referee, referred_email, friend_email, invitee_email, email]
+      code: [referral_code, coupon_code, share_code]
+      converted_at: [completed_at, rewarded_at, qualified_at]
+
+exclude:
+  member:
+    dotdigital: /cpaas/chats/{id}/participants are chat participants
+duplicates:
+  impact: [impact-radius]
+
+findings:
+  - "A reward agrees on name, type, status, description and dates: what can be redeemed is
+    shared across loyalty platforms, card-linked offer networks and incentive tools."
+  - "A member agrees on nothing outright. Square's loyalty accounts, Starbucks' star balances
+    and Smile's customers each carry the points balance and the tier in their own shape."
+  - "Points are a balance on the member far more often than a resource of their own, and tiers
+    a field rather than a list (4 and 2 providers)."
+decisions:
+  - "A member covers loyalty accounts and profiles; a reward covers offers, perks, catalog items
+    and redemptions."
+  - "Points transactions and tiers are not published as concepts; they are recorded for the next
+    re-measure."
+  - "A referral covers advocates and referral codes."
+  - "Gift cards are not a cohort tag: they are a stored-value payment instrument, not loyalty."
+  - "Duplicates merged: Impact."

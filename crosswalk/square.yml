@@ -1,0 +1,32 @@
+provider: square
+apis_io: https://apis.io/providers/square/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - accounts
+    properties:
+      id: id
+      member_id: customer_id
+      created_at:
+      - enrolled_at
+      - created_at
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/square-openapi.yml#GET /v2/loyalty/accounts/{account_id}
+    - openapi/_original/square-openapi.yml#POST /v2/loyalty/accounts
+  reward:
+    path_segment:
+    - rewards
+    properties:
+      created_at: created_at
+      id: id
+      status: status
+      updated_at: updated_at
+      points: points
+    core_coverage: 0.571
+    evidence:
+    - openapi/_original/square-openapi.yml#DELETE /v2/loyalty/rewards/{reward_id}
+    - openapi/_original/square-openapi.yml#GET /v2/loyalty/rewards/{reward_id}
+    - openapi/_original/square-openapi.yml#POST /v2/loyalty/rewards

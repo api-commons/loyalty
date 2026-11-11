@@ -1,0 +1,17 @@
+provider: impact
+apis_io: https://apis.io/providers/impact/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  referral:
+    path_segment:
+    - referrals
+    properties:
+      id: id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/impact-brand-advocate-referral-v13-openapi.yml#GET /{tenant_alias}/open/referrals
+    - openapi/_original/impact-brand-advocate-referral-v13-openapi.yml#GET /{tenant_alias}/referrals
+    - openapi/_original/impact-brand-advocate-referral-v13-openapi.yml#GET /{tenant_alias}/referrals/{referralId}
+    - openapi/_original/impact-brand-advocate-referral-v13.yaml#GET /{tenant_alias}/open/referrals
+    - openapi/_original/impact-brand-advocate-referral-v13.yaml#GET /{tenant_alias}/referrals

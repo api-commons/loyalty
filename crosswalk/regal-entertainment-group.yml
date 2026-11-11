@@ -1,0 +1,16 @@
+provider: regal-entertainment-group
+apis_io: https://apis.io/providers/regal-entertainment-group/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties:
+      email: email
+      member_id: memberId
+      name: name
+      tier_id: tier
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/regal-cinema-openapi.yml#GET /loyalty/members/{memberId}

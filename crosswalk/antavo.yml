@@ -1,0 +1,43 @@
+provider: antavo
+apis_io: https://apis.io/providers/antavo/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties:
+      status: status
+      metadata: metadata
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/antavo-clubs-openapi.yml#GET /v1/clubs/{club_id}/members
+    - openapi/_original/antavo-clubs-openapi.yml#GET /v1/clubs/{club_id}/members/{customer_id}
+  reward:
+    path_segment:
+    - rewards
+    - reward
+    - offers
+    properties:
+      created_at: created_at
+      id: id
+      status: status
+      description:
+      - description
+      - terms
+      name:
+      - title
+      - name
+      type:
+      - type
+      - category
+      image_url: image_url
+      member_id: customer
+      points: points
+    core_coverage: 0.857
+    evidence:
+    - openapi/_original/antavo-display-openapi.yml#GET /customers/{customer_id}/activities/offers
+    - openapi/_original/antavo-display-openapi.yml#GET /customers/{customer_id}/activities/rewards
+    - openapi/_original/antavo-display-openapi.yml#GET /customers/{customer_id}/activities/rewards/{reward_id}
+    - openapi/_original/antavo-display-openapi.yml#GET /customers/{customer_id}/rewards
+    - openapi/_original/antavo-entities-openapi.yml#DELETE /entities/rewards/reward/{entity_id}

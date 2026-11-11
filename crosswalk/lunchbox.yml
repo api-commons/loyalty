@@ -1,0 +1,14 @@
+provider: lunchbox
+apis_io: https://apis.io/providers/lunchbox/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/lunchbox-core-openapi.yml#GET /orders/group/members
+    - openapi/_original/lunchbox-core-openapi.yml#POST /orders/group/members
+    - openapi/_original/lunchbox-core-openapi.yml#POST /orders/group/{order_id}/members

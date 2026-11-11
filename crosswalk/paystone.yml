@@ -1,0 +1,27 @@
+provider: paystone
+apis_io: https://apis.io/providers/paystone/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - member
+    properties:
+      id: '@id'
+      status: isActive
+      name: displayName
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/paystone-datacandy-openapi.yml#GET /v1/clients/{accessKey}/portals/member
+  reward:
+    path_segment:
+    - rewards
+    properties:
+      created_at: creationDate
+      id: '@id'
+      type:
+      - '@type'
+      - type
+    core_coverage: 0.429
+    evidence:
+    - openapi/_original/paystone-datacandy-openapi.yml#GET /rewards/{id}

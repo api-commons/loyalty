@@ -1,0 +1,27 @@
+provider: tremendous
+apis_io: https://apis.io/providers/tremendous/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties:
+      id: id
+      status: status
+      email: email
+      name: name
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/tremendous-api-openapi.yml#GET /members
+    - openapi/_original/tremendous-api-openapi.yml#POST /members
+  reward:
+    path_segment:
+    - rewards
+    properties:
+      created_at: created_at
+      id: id
+      status: status
+    core_coverage: 0.429
+    evidence:
+    - openapi/_original/tremendous-api-openapi.yml#GET /rewards/{id}

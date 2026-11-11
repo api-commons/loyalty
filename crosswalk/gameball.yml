@@ -1,0 +1,46 @@
+provider: gameball
+apis_io: https://apis.io/providers/gameball/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/gameball-openapi.json#DELETE /api/v1/Bots/family/{familyId}/members/{memberId}
+    - openapi/_original/gameball-openapi.json#GET /api/v1/Bots/family/{familyId}/members
+  reward:
+    path_segment:
+    - reward
+    - redemption
+    properties:
+      created_at: creationDate
+      status: status
+      description: details
+      email: email
+      points:
+      - amount
+      - pointsAmount
+      - points
+    core_coverage: 0.429
+    evidence:
+    - openapi/_original/gameball-openapi.json#GET /api/v1/Programs/redemption
+    - openapi/_original/gameball-openapi.json#GET /api/v1/Programs/reward
+    - openapi/_original/gameball-openapi.json#POST /api/v1/Integrations/Action/Reward
+    - openapi/_original/gameball-openapi.json#POST /api/v1/Integrations/Transaction/Reward
+    - openapi/_original/gameball-openapi.json#POST /internal/v1/world-cup/leaderboard/reward
+  referral:
+    path_segment:
+    - referrals
+    - referral
+    properties:
+      created_at: creationDate
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/gameball-openapi.json#GET /api/v1/Analytics/Referrals
+    - openapi/_original/gameball-openapi.json#GET /api/v1/Bots/players/{identifier}/referrals
+    - openapi/_original/gameball-openapi.json#GET /api/v1/Players/{id}/referrals
+    - openapi/_original/gameball-openapi.json#GET /api/v1/Programs/referrals
+    - openapi/_original/gameball-openapi.json#GET /api/v1/Shopify/app-blocks/thank-you/referral

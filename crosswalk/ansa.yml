@@ -1,0 +1,15 @@
+provider: ansa
+apis_io: https://apis.io/providers/ansa/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  referral:
+    path_segment:
+    - referrals
+    properties:
+      created_at: created
+      id: id
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/ansa-openapi-original.yml#GET /v1/customers/{customerId}/referrals
+    - openapi/_original/ansa-openapi-original.yml#POST /v1/customers/{customerId}/referrals

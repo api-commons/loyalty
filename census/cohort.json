@@ -1,0 +1,946 @@
+[
+ {
+  "slug": "accrue-savings",
+  "specs": [
+   "openapi/_original/accrue-savings-merchant-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "alliance-data-systems",
+  "specs": [
+   "openapi/_original/bread-classic-merchant-openapi.yml",
+   "openapi/_original/bread-pay-platform-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ansa",
+  "specs": [
+   "openapi/_original/ansa-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "antavo",
+  "specs": [
+   "openapi/_original/antavo-async-events-openapi.yml",
+   "openapi/_original/antavo-authentication-openapi.yml",
+   "openapi/_original/antavo-bulk-operations-openapi.yml",
+   "openapi/_original/antavo-clubs-openapi.yml",
+   "openapi/_original/antavo-coupon-pools-openapi.yml",
+   "openapi/_original/antavo-coupons-openapi.yml",
+   "openapi/_original/antavo-customer-openapi.yml",
+   "openapi/_original/antavo-display-openapi.yml",
+   "openapi/_original/antavo-entities-openapi.yml",
+   "openapi/_original/antavo-events-openapi.yml",
+   "openapi/_original/antavo-faq-openapi.yml",
+   "openapi/_original/antavo-leaderboard-openapi.yml",
+   "openapi/_original/antavo-loyalty-read-openapi.yml",
+   "openapi/_original/antavo-offers-openapi.yml",
+   "openapi/_original/antavo-points-preview-openapi.yml",
+   "openapi/_original/antavo-promotion-engine-openapi.yml",
+   "openapi/_original/antavo-rewards-openapi.yml",
+   "openapi/_original/antavo-social-share-campaigns-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bilt",
+  "specs": [
+   "openapi/_original/checkout-sdk.yml"
+  ]
+ },
+ {
+  "slug": "blackbird",
+  "specs": [
+   "openapi/_original/blackbird-flynet-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "bonusly",
+  "specs": [
+   "openapi/_original/bonusly-openapi.yml"
+  ]
+ },
+ {
+  "slug": "boost",
+  "specs": [
+   "openapi/_original/boost-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "brevo",
+  "specs": [
+   "openapi/_original/brevo-accounts-and-settings-openapi.yml",
+   "openapi/_original/brevo-contact-management-openapi.yml",
+   "openapi/_original/brevo-contacts-openapi.yml",
+   "openapi/_original/brevo-conversations-openapi.yml",
+   "openapi/_original/brevo-conversations-openapi_2.yml",
+   "openapi/_original/brevo-ecommerce-openapi.yml",
+   "openapi/_original/brevo-ecommerce-openapi_2.yml",
+   "openapi/_original/brevo-email-api-openapi.yml",
+   "openapi/_original/brevo-email-campaigns-openapi.yml",
+   "openapi/_original/brevo-events-openapi.yml",
+   "openapi/_original/brevo-loyalty-openapi.yml",
+   "openapi/_original/brevo-marketing-campaigns-openapi.yml",
+   "openapi/_original/brevo-object-management-openapi.yml",
+   "openapi/_original/brevo-sales-crm-openapi.yml",
+   "openapi/_original/brevo-transactional-email-openapi.yml",
+   "openapi/_original/brevo-transactional-sms-openapi.yml",
+   "openapi/_original/brevo-transactional-sms-openapi_2.yml",
+   "openapi/_original/brevo-transactional-whatsapp-openapi.yml",
+   "openapi/_original/brevo-wallet-openapi.yml",
+   "openapi/_original/brevo-webhooks-openapi.yml",
+   "openapi/_original/brevo-whatsapp-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bybe",
+  "specs": [
+   "openapi/_original/bybe-api-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "caseys-general-stores",
+  "specs": [
+   "openapi/_original/caseys-general-stores-cas-api-openapi.json",
+   "openapi/_original/caseys-general-stores-cas-gateway-api-openapi.json",
+   "openapi/_original/caseys-general-stores-devops-metrics-api-openapi.json",
+   "openapi/_original/caseys-general-stores-digital-production-planner-api-openapi.json",
+   "openapi/_original/caseys-general-stores-fuel-price-api-openapi.json",
+   "openapi/_original/caseys-general-stores-item-api-openapi.json",
+   "openapi/_original/caseys-general-stores-itsm-api-openapi.json",
+   "openapi/_original/caseys-general-stores-kitchen-supply-ordering-api-openapi.json",
+   "openapi/_original/caseys-general-stores-old-store-api-openapi.json",
+   "openapi/_original/caseys-general-stores-power-inventory-api-openapi.json",
+   "openapi/_original/caseys-general-stores-production-planner-api-openapi.json",
+   "openapi/_original/caseys-general-stores-shelf-label-print-api-openapi.json",
+   "openapi/_original/caseys-general-stores-store-api-openapi.json",
+   "openapi/_original/caseys-general-stores-store-details-api-openapi.json",
+   "openapi/_original/caseys-general-stores-store-messaging-api-openapi.json",
+   "openapi/_original/caseys-general-stores-store-number-api-openapi.json",
+   "openapi/_original/caseys-general-stores-supplier-api-openapi.json",
+   "openapi/_original/caseys-general-stores-tank-level-api-openapi.json",
+   "openapi/_original/caseys-general-stores-tax-api-openapi.json",
+   "openapi/_original/caseys-general-stores-team-member-api-openapi.json",
+   "openapi/_original/caseys-general-stores-vendor-checkin-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "cello",
+  "specs": [
+   "openapi/_original/cello-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "centrapay",
+  "specs": [
+   "openapi/_original/centrapay-openapi.yml"
+  ]
+ },
+ {
+  "slug": "chase",
+  "specs": [
+   "openapi/_original/chase-account-aggregation-user-consent-api-openapi.yml",
+   "openapi/_original/chase-account-and-customer-information-api-openapi.yml",
+   "openapi/_original/chase-loyalty-pay-with-points-enrollment-service-api-openapi.yml",
+   "openapi/_original/chase-loyalty-pay-with-points-order-service-api-openapi.yml",
+   "openapi/_original/chase-loyalty-pci-merchant-relationship-manager-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cloudkitchens",
+  "specs": [
+   "openapi/_original/cloudkitchens-public-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "crm-bonus",
+  "specs": [
+   "openapi/_original/crm-bonus-oto-data-api-openapi.json",
+   "openapi/_original/crm-bonus-oto-data-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "dotdigital",
+  "specs": [
+   "openapi/_original/Dotdigital-dotdigital-campaign-templates-2.0.0-resolved.yaml",
+   "openapi/_original/Dotdigital-dotdigital-contact-data-fields-2.0.0-resolved-1.yaml",
+   "openapi/_original/Dotdigital-dotdigital-documents-2.0.0-resolved.yaml",
+   "openapi/_original/Dotdigital-dotdigital-email-contacts-2.0.0-resolved.yaml",
+   "openapi/_original/Dotdigital-dotdigital-insight-and-transactional-data-2.0.0-resolved.yaml",
+   "openapi/_original/Dotdigital-dotdigital-lists-address-books-2.0.0-resolved.yaml",
+   "openapi/_original/Dotdigital-dotdigital-pages-and-forms-2.0.0-resolved.yaml",
+   "openapi/_original/Dotdigital-dotdigital-preferences-and-subscriptions-2.0.0-resolved.yaml",
+   "openapi/_original/Dotdigital-whatsapp-channel-api-1.0.0-resolved-1.yaml",
+   "openapi/_original/accounts-and-utilities.yaml",
+   "openapi/_original/analytics-api.json",
+   "openapi/_original/chat-api.json",
+   "openapi/_original/chat-config-api.json",
+   "openapi/_original/chat-message-api.json",
+   "openapi/_original/chat-presence-api.json",
+   "openapi/_original/content-api.json",
+   "openapi/_original/conversation-api.json",
+   "openapi/_original/conversation-message-api.json",
+   "openapi/_original/cpaas-api.json",
+   "openapi/_original/data-firehose.json",
+   "openapi/_original/dotdigital-accounts-and-utilities-openapi.yml",
+   "openapi/_original/dotdigital-analytics-openapi.yml",
+   "openapi/_original/dotdigital-campaign-templates-openapi.yml",
+   "openapi/_original/dotdigital-chat-config-openapi.yml",
+   "openapi/_original/dotdigital-chat-message-openapi.yml",
+   "openapi/_original/dotdigital-chat-openapi.yml",
+   "openapi/_original/dotdigital-chat-presence-openapi.yml",
+   "openapi/_original/dotdigital-configuration-service-openapi.yml",
+   "openapi/_original/dotdigital-configuration-service.json",
+   "openapi/_original/dotdigital-contact-data-fields-openapi.yml",
+   "openapi/_original/dotdigital-contacts-openapi.yml",
+   "openapi/_original/dotdigital-contacts-service.json",
+   "openapi/_original/dotdigital-content-openapi.yml",
+   "openapi/_original/dotdigital-conversation-message-openapi.yml",
+   "openapi/_original/dotdigital-conversation-openapi.yml",
+   "openapi/_original/dotdigital-cpaas-openapi.yml",
+   "openapi/_original/dotdigital-data-firehose-openapi.yml",
+   "openapi/_original/dotdigital-documents-openapi.yml",
+   "openapi/_original/dotdigital-ecommerce-openapi.yml",
+   "openapi/_original/dotdigital-email-campaigns-openapi.yml",
+   "openapi/_original/dotdigital-email-contacts-openapi.yml",
+   "openapi/_original/dotdigital-events-openapi.yml",
+   "openapi/_original/dotdigital-images-openapi.yml",
+   "openapi/_original/dotdigital-insight-and-transactional-data-openapi.yml",
+   "openapi/_original/dotdigital-insight-data-service-openapi.yml",
+   "openapi/_original/dotdigital-insight-data-service.json",
+   "openapi/_original/dotdigital-lists-address-books-openapi.yml",
+   "openapi/_original/dotdigital-marketing-email-openapi.yml",
+   "openapi/_original/dotdigital-message-history-openapi.yml",
+   "openapi/_original/dotdigital-message-rules-openapi.yml",
+   "openapi/_original/dotdigital-omnichannel-openapi.yml",
+   "openapi/_original/dotdigital-pages-and-forms-openapi.yml",
+   "openapi/_original/dotdigital-phone-number-validation-openapi.yml",
+   "openapi/_original/dotdigital-preferences-and-subscriptions-openapi.yml",
+   "openapi/_original/dotdigital-product-recommendations-openapi.yml",
+   "openapi/_original/dotdigital-profile-openapi.yml",
+   "openapi/_original/dotdigital-programs-openapi.yml",
+   "openapi/_original/dotdigital-scoring-openapi.yml",
+   "openapi/_original/dotdigital-segments-openapi.yml",
+   "openapi/_original/dotdigital-session-openapi.yml",
+   "openapi/_original/dotdigital-sms-campaigns-openapi.yml",
+   "openapi/_original/dotdigital-templates-openapi.yml",
+   "openapi/_original/dotdigital-transactional-email-openapi.yml",
+   "openapi/_original/dotdigital-v2-api-full-openapi.yml",
+   "openapi/_original/dotdigital-v2-api-swagger.json",
+   "openapi/_original/dotdigital-webhook-openapi.yml",
+   "openapi/_original/dotdigital-whatsapp-channel-openapi.yml",
+   "openapi/_original/ecommerce.yaml",
+   "openapi/_original/email-campaigns.yaml",
+   "openapi/_original/events.json",
+   "openapi/_original/images.yaml",
+   "openapi/_original/marketing-email-api.json",
+   "openapi/_original/message-history-api.json",
+   "openapi/_original/message-rules-api.json",
+   "openapi/_original/omnichannel-api.json",
+   "openapi/_original/phone-number-validation-api.json",
+   "openapi/_original/product-recommendations.yaml",
+   "openapi/_original/profile-api.json",
+   "openapi/_original/programs.yaml",
+   "openapi/_original/scoring.yaml",
+   "openapi/_original/segments.yaml",
+   "openapi/_original/session-api.json",
+   "openapi/_original/sms-campaigns.yaml",
+   "openapi/_original/templates-api.json",
+   "openapi/_original/transactional-email.yaml",
+   "openapi/_original/webhook-api.json"
+  ]
+ },
+ {
+  "slug": "epsilon",
+  "specs": [
+   "openapi/_original/epsilon-retail-media-cross-sell-category-openapi.json",
+   "openapi/_original/epsilon-retail-media-filter-mapping-openapi.json",
+   "openapi/_original/epsilon-retail-media-integration-openapi.json"
+  ]
+ },
+ {
+  "slug": "extole",
+  "specs": [
+   "openapi/_original/extole-integration-consumer-to-extole-openapi.json",
+   "openapi/_original/extole-integration-server-to-extole-openapi.json",
+   "openapi/_original/extole-management-expert-openapi.json",
+   "openapi/_original/extole-management-openapi.json"
+  ]
+ },
+ {
+  "slug": "fetch-rewards",
+  "specs": [
+   "openapi/_original/fetch-rewards-receipt-processor-openapi.yml"
+  ]
+ },
+ {
+  "slug": "gameball",
+  "specs": [
+   "openapi/_original/gameball-openapi.json"
+  ]
+ },
+ {
+  "slug": "giftbit",
+  "specs": [
+   "openapi/_original/giftbit-openapi.yml"
+  ]
+ },
+ {
+  "slug": "goody",
+  "specs": [
+   "openapi/_original/goody-openapi.json"
+  ]
+ },
+ {
+  "slug": "grab",
+  "specs": [
+   "openapi/_original/grab-openapi.yml"
+  ]
+ },
+ {
+  "slug": "guusto",
+  "specs": [
+   "openapi/_original/guusto-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hang",
+  "specs": [
+   "openapi/_original/hang-openapi.json"
+  ]
+ },
+ {
+  "slug": "harbor",
+  "specs": [
+   "openapi/_original/harbor-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hilton",
+  "specs": [
+   "openapi/_original/hilton-hilton-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "hopper-com",
+  "specs": [
+   "openapi/_original/hopper-airlines-openapi.yml"
+  ]
+ },
+ {
+  "slug": "huuray",
+  "specs": [
+   "openapi/_original/huuray-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ibotta",
+  "specs": [
+   "openapi/_original/ibotta-product-api-openapi.json",
+   "openapi/_original/ibotta-product-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "impact",
+  "specs": [
+   "openapi/_original/impact-agency-advertisers-v3-openapi.yml",
+   "openapi/_original/impact-agency-advertisers-v3.yaml",
+   "openapi/_original/impact-agency-companyinformation-v3-openapi.yml",
+   "openapi/_original/impact-agency-companyinformation-v3.yaml",
+   "openapi/_original/impact-agency-compliance-v3-openapi.yml",
+   "openapi/_original/impact-agency-compliance-v3.yaml",
+   "openapi/_original/impact-agency-jobs-v3-openapi.yml",
+   "openapi/_original/impact-agency-jobs-v3.yaml",
+   "openapi/_original/impact-agency-reports-v3-openapi.yml",
+   "openapi/_original/impact-agency-reports-v3.yaml",
+   "openapi/_original/impact-brand-account-v14-openapi.yml",
+   "openapi/_original/impact-brand-account-v14.yaml",
+   "openapi/_original/impact-brand-actioninquiries-v14-openapi.yml",
+   "openapi/_original/impact-brand-actioninquiries-v14.yaml",
+   "openapi/_original/impact-brand-actions-v14-openapi.yml",
+   "openapi/_original/impact-brand-actions-v14.yaml",
+   "openapi/_original/impact-brand-ads-v14-openapi.yml",
+   "openapi/_original/impact-brand-ads-v14.yaml",
+   "openapi/_original/impact-brand-advocate-account-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-account-v13.yaml",
+   "openapi/_original/impact-brand-advocate-export-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-export-v13.yaml",
+   "openapi/_original/impact-brand-advocate-referral-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-referral-v13.yaml",
+   "openapi/_original/impact-brand-advocate-referralcode-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-referralcode-v13.yaml",
+   "openapi/_original/impact-brand-advocate-reward-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-reward-v13.yaml",
+   "openapi/_original/impact-brand-advocate-rewardbalance-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-rewardbalance-v13.yaml",
+   "openapi/_original/impact-brand-advocate-sharelinks-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-sharelinks-v13.yaml",
+   "openapi/_original/impact-brand-advocate-user-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-user-v13.yaml",
+   "openapi/_original/impact-brand-advocate-webhook-v13-openapi.yml",
+   "openapi/_original/impact-brand-advocate-webhook-v13.yaml",
+   "openapi/_original/impact-brand-calldata-v14-openapi.yml",
+   "openapi/_original/impact-brand-calldata-v14.yaml",
+   "openapi/_original/impact-brand-catalogs-v14-openapi.yml",
+   "openapi/_original/impact-brand-catalogs-v14.yaml",
+   "openapi/_original/impact-brand-clicks-v14-openapi.yml",
+   "openapi/_original/impact-brand-clicks-v14.yaml",
+   "openapi/_original/impact-brand-contacts-v14-openapi.yml",
+   "openapi/_original/impact-brand-contacts-v14.yaml",
+   "openapi/_original/impact-brand-contracts-v14-openapi.yml",
+   "openapi/_original/impact-brand-contracts-v14.yaml",
+   "openapi/_original/impact-brand-conversions-v14-openapi.yml",
+   "openapi/_original/impact-brand-conversions-v14.yaml",
+   "openapi/_original/impact-brand-deals-v14-openapi.yml",
+   "openapi/_original/impact-brand-deals-v14.yaml",
+   "openapi/_original/impact-brand-deferreddeeplink-v14-openapi.yml",
+   "openapi/_original/impact-brand-deferreddeeplink-v14.yaml",
+   "openapi/_original/impact-brand-exceptionlists-v14-openapi.yml",
+   "openapi/_original/impact-brand-exceptionlists-v14.yaml",
+   "openapi/_original/impact-brand-invoices-v14-openapi.yml",
+   "openapi/_original/impact-brand-invoices-v14.yaml",
+   "openapi/_original/impact-brand-jobs-v14-openapi.yml",
+   "openapi/_original/impact-brand-jobs-v14.yaml",
+   "openapi/_original/impact-brand-notes-v14-openapi.yml",
+   "openapi/_original/impact-brand-notes-v14.yaml",
+   "openapi/_original/impact-brand-pageload-v14-openapi.yml",
+   "openapi/_original/impact-brand-pageload-v14.yaml",
+   "openapi/_original/impact-brand-partnergroups-v14-openapi.yml",
+   "openapi/_original/impact-brand-partnergroups-v14.yaml",
+   "openapi/_original/impact-brand-partners-v14-openapi.yml",
+   "openapi/_original/impact-brand-partners-v14.yaml",
+   "openapi/_original/impact-brand-phonenumbers-v14-openapi.yml",
+   "openapi/_original/impact-brand-phonenumbers-v14.yaml",
+   "openapi/_original/impact-brand-programs-v14-openapi.yml",
+   "openapi/_original/impact-brand-programs-v14.yaml",
+   "openapi/_original/impact-brand-promocodeexceptionlists-v14-openapi.yml",
+   "openapi/_original/impact-brand-promocodeexceptionlists-v14.yaml",
+   "openapi/_original/impact-brand-promocodes-v14-openapi.yml",
+   "openapi/_original/impact-brand-promocodes-v14.yaml",
+   "openapi/_original/impact-brand-reports-v14-openapi.yml",
+   "openapi/_original/impact-brand-reports-v14.yaml",
+   "openapi/_original/impact-brand-routingrules-v14-openapi.yml",
+   "openapi/_original/impact-brand-routingrules-v14.yaml",
+   "openapi/_original/impact-brand-submissions-v14-openapi.yml",
+   "openapi/_original/impact-brand-submissions-v14.yaml",
+   "openapi/_original/impact-brand-tasks-v14-openapi.yml",
+   "openapi/_original/impact-brand-tasks-v14.yaml",
+   "openapi/_original/impact-brand-trackinglinks-v14-openapi.yml",
+   "openapi/_original/impact-brand-trackinglinks-v14.yaml",
+   "openapi/_original/impact-brand-trackingvaluerequests-v14-openapi.yml",
+   "openapi/_original/impact-brand-trackingvaluerequests-v14.yaml",
+   "openapi/_original/impact-partner-account-v16-openapi.yml",
+   "openapi/_original/impact-partner-account-v16.yaml",
+   "openapi/_original/impact-partner-actioninquiries-v16-openapi.yml",
+   "openapi/_original/impact-partner-actioninquiries-v16.yaml",
+   "openapi/_original/impact-partner-actions-v16-openapi.yml",
+   "openapi/_original/impact-partner-actions-v16.yaml",
+   "openapi/_original/impact-partner-ads-v16-openapi.yml",
+   "openapi/_original/impact-partner-ads-v16.yaml",
+   "openapi/_original/impact-partner-campaigns-v16-openapi.yml",
+   "openapi/_original/impact-partner-campaigns-v16.yaml",
+   "openapi/_original/impact-partner-catalogs-v16-openapi.yml",
+   "openapi/_original/impact-partner-catalogs-v16.yaml",
+   "openapi/_original/impact-partner-clicks-v16-openapi.yml",
+   "openapi/_original/impact-partner-clicks-v16.yaml",
+   "openapi/_original/impact-partner-contracts-v16-openapi.yml",
+   "openapi/_original/impact-partner-contracts-v16.yaml",
+   "openapi/_original/impact-partner-conversions-v16-openapi.yml",
+   "openapi/_original/impact-partner-conversions-v16.yaml",
+   "openapi/_original/impact-partner-deals-v16-openapi.yml",
+   "openapi/_original/impact-partner-deals-v16.yaml",
+   "openapi/_original/impact-partner-eventnotifications-v16-openapi.yml",
+   "openapi/_original/impact-partner-eventnotifications-v16.yaml",
+   "openapi/_original/impact-partner-exceptionlists-v16-openapi.yml",
+   "openapi/_original/impact-partner-exceptionlists-v16.yaml",
+   "openapi/_original/impact-partner-identityverification-v16-openapi.yml",
+   "openapi/_original/impact-partner-identityverification-v16.yaml",
+   "openapi/_original/impact-partner-invoices-v16-openapi.yml",
+   "openapi/_original/impact-partner-invoices-v16.yaml",
+   "openapi/_original/impact-partner-jobs-v16-openapi.yml",
+   "openapi/_original/impact-partner-jobs-v16.yaml",
+   "openapi/_original/impact-partner-mediaproperties-v16-openapi.yml",
+   "openapi/_original/impact-partner-mediaproperties-v16.yaml",
+   "openapi/_original/impact-partner-promo-codes-v16-openapi.yml",
+   "openapi/_original/impact-partner-promo-codes-v16.yaml",
+   "openapi/_original/impact-partner-promocodeexceptionlists-v16-openapi.yml",
+   "openapi/_original/impact-partner-promocodeexceptionlists-v16.yaml",
+   "openapi/_original/impact-partner-promotions-v16-openapi.yml",
+   "openapi/_original/impact-partner-promotions-v16.yaml",
+   "openapi/_original/impact-partner-reports-v16-openapi.yml",
+   "openapi/_original/impact-partner-reports-v16.yaml",
+   "openapi/_original/impact-partner-stores-v16-openapi.yml",
+   "openapi/_original/impact-partner-stores-v16.yaml",
+   "openapi/_original/impact-partner-tasks-v16-openapi.yml",
+   "openapi/_original/impact-partner-tasks-v16.yaml",
+   "openapi/_original/impact-partner-taxdocument-v16-openapi.yml",
+   "openapi/_original/impact-partner-taxdocument-v16.yaml",
+   "openapi/_original/impact-partner-trackinglinks-v16-openapi.yml",
+   "openapi/_original/impact-partner-trackinglinks-v16.yaml",
+   "openapi/_original/impact-partner-users-v16-openapi.yml",
+   "openapi/_original/impact-partner-users-v16.yaml",
+   "openapi/_original/impact-partner-withdrawalsettings-v16-openapi.yml",
+   "openapi/_original/impact-partner-withdrawalsettings-v16.yaml"
+  ]
+ },
+ {
+  "slug": "impact-radius",
+  "specs": [
+   "openapi/_original/impact-radius-agency-advertisers-v3.yaml",
+   "openapi/_original/impact-radius-agency-advertisers-v3.yml",
+   "openapi/_original/impact-radius-agency-companyinformation-v3.yaml",
+   "openapi/_original/impact-radius-agency-companyinformation-v3.yml",
+   "openapi/_original/impact-radius-agency-compliance-v3.yaml",
+   "openapi/_original/impact-radius-agency-compliance-v3.yml",
+   "openapi/_original/impact-radius-agency-jobs-v3.yaml",
+   "openapi/_original/impact-radius-agency-jobs-v3.yml",
+   "openapi/_original/impact-radius-agency-reports-v3.yaml",
+   "openapi/_original/impact-radius-agency-reports-v3.yml",
+   "openapi/_original/impact-radius-brand-account-v14.yaml",
+   "openapi/_original/impact-radius-brand-account-v14.yml",
+   "openapi/_original/impact-radius-brand-actioninquiries-v14.yaml",
+   "openapi/_original/impact-radius-brand-actioninquiries-v14.yml",
+   "openapi/_original/impact-radius-brand-actions-v14.yaml",
+   "openapi/_original/impact-radius-brand-actions-v14.yml",
+   "openapi/_original/impact-radius-brand-ads-v14.yaml",
+   "openapi/_original/impact-radius-brand-ads-v14.yml",
+   "openapi/_original/impact-radius-brand-advocate-account-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-account-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-export-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-export-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-referral-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-referral-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-referralcode-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-referralcode-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-reward-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-reward-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-rewardbalance-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-rewardbalance-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-sharelinks-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-sharelinks-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-user-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-user-v13.yml",
+   "openapi/_original/impact-radius-brand-advocate-webhook-v13.yaml",
+   "openapi/_original/impact-radius-brand-advocate-webhook-v13.yml",
+   "openapi/_original/impact-radius-brand-calldata-v14.yaml",
+   "openapi/_original/impact-radius-brand-calldata-v14.yml",
+   "openapi/_original/impact-radius-brand-catalogs-v14.yaml",
+   "openapi/_original/impact-radius-brand-catalogs-v14.yml",
+   "openapi/_original/impact-radius-brand-clicks-v14.yaml",
+   "openapi/_original/impact-radius-brand-clicks-v14.yml",
+   "openapi/_original/impact-radius-brand-contacts-v14.yaml",
+   "openapi/_original/impact-radius-brand-contacts-v14.yml",
+   "openapi/_original/impact-radius-brand-contracts-v14.yaml",
+   "openapi/_original/impact-radius-brand-contracts-v14.yml",
+   "openapi/_original/impact-radius-brand-conversions-v14.yaml",
+   "openapi/_original/impact-radius-brand-conversions-v14.yml",
+   "openapi/_original/impact-radius-brand-deals-v14.yaml",
+   "openapi/_original/impact-radius-brand-deals-v14.yml",
+   "openapi/_original/impact-radius-brand-deferreddeeplink-v14.yaml",
+   "openapi/_original/impact-radius-brand-deferreddeeplink-v14.yml",
+   "openapi/_original/impact-radius-brand-exceptionlists-v14.yaml",
+   "openapi/_original/impact-radius-brand-exceptionlists-v14.yml",
+   "openapi/_original/impact-radius-brand-invoices-v14.yaml",
+   "openapi/_original/impact-radius-brand-invoices-v14.yml",
+   "openapi/_original/impact-radius-brand-jobs-v14.yaml",
+   "openapi/_original/impact-radius-brand-jobs-v14.yml",
+   "openapi/_original/impact-radius-brand-notes-v14.yaml",
+   "openapi/_original/impact-radius-brand-notes-v14.yml",
+   "openapi/_original/impact-radius-brand-pageload-v14.yaml",
+   "openapi/_original/impact-radius-brand-pageload-v14.yml",
+   "openapi/_original/impact-radius-brand-partnergroups-v14.yaml",
+   "openapi/_original/impact-radius-brand-partnergroups-v14.yml",
+   "openapi/_original/impact-radius-brand-partners-v14.yaml",
+   "openapi/_original/impact-radius-brand-partners-v14.yml",
+   "openapi/_original/impact-radius-brand-phonenumbers-v14.yaml",
+   "openapi/_original/impact-radius-brand-phonenumbers-v14.yml",
+   "openapi/_original/impact-radius-brand-programs-v14.yaml",
+   "openapi/_original/impact-radius-brand-programs-v14.yml",
+   "openapi/_original/impact-radius-brand-promocodeexceptionlists-v14.yaml",
+   "openapi/_original/impact-radius-brand-promocodeexceptionlists-v14.yml",
+   "openapi/_original/impact-radius-brand-promocodes-v14.yaml",
+   "openapi/_original/impact-radius-brand-promocodes-v14.yml",
+   "openapi/_original/impact-radius-brand-reports-v14.yaml",
+   "openapi/_original/impact-radius-brand-reports-v14.yml",
+   "openapi/_original/impact-radius-brand-routingrules-v14.yaml",
+   "openapi/_original/impact-radius-brand-routingrules-v14.yml",
+   "openapi/_original/impact-radius-brand-submissions-v14.yaml",
+   "openapi/_original/impact-radius-brand-submissions-v14.yml",
+   "openapi/_original/impact-radius-brand-tasks-v14.yaml",
+   "openapi/_original/impact-radius-brand-tasks-v14.yml",
+   "openapi/_original/impact-radius-brand-trackinglinks-v14.yaml",
+   "openapi/_original/impact-radius-brand-trackinglinks-v14.yml",
+   "openapi/_original/impact-radius-brand-trackingvaluerequests-v14.yaml",
+   "openapi/_original/impact-radius-brand-trackingvaluerequests-v14.yml",
+   "openapi/_original/impact-radius-partner-account-v15.yaml",
+   "openapi/_original/impact-radius-partner-account-v15.yml",
+   "openapi/_original/impact-radius-partner-actioninquiries-v15.yaml",
+   "openapi/_original/impact-radius-partner-actioninquiries-v15.yml",
+   "openapi/_original/impact-radius-partner-actions-v15.yaml",
+   "openapi/_original/impact-radius-partner-actions-v15.yml",
+   "openapi/_original/impact-radius-partner-ads-v15.yaml",
+   "openapi/_original/impact-radius-partner-ads-v15.yml",
+   "openapi/_original/impact-radius-partner-campaigns-v15.yaml",
+   "openapi/_original/impact-radius-partner-campaigns-v15.yml",
+   "openapi/_original/impact-radius-partner-catalogs-v15.yaml",
+   "openapi/_original/impact-radius-partner-catalogs-v15.yml",
+   "openapi/_original/impact-radius-partner-clicks-v15.yaml",
+   "openapi/_original/impact-radius-partner-clicks-v15.yml",
+   "openapi/_original/impact-radius-partner-contracts-v15.yaml",
+   "openapi/_original/impact-radius-partner-contracts-v15.yml",
+   "openapi/_original/impact-radius-partner-deals-v15.yaml",
+   "openapi/_original/impact-radius-partner-deals-v15.yml",
+   "openapi/_original/impact-radius-partner-eventnotifications-v15.yaml",
+   "openapi/_original/impact-radius-partner-eventnotifications-v15.yml",
+   "openapi/_original/impact-radius-partner-exceptionlists-v15.yaml",
+   "openapi/_original/impact-radius-partner-exceptionlists-v15.yml",
+   "openapi/_original/impact-radius-partner-identityverification-v15.yaml",
+   "openapi/_original/impact-radius-partner-identityverification-v15.yml",
+   "openapi/_original/impact-radius-partner-invoices-v15.yaml",
+   "openapi/_original/impact-radius-partner-invoices-v15.yml",
+   "openapi/_original/impact-radius-partner-jobs-v15.yaml",
+   "openapi/_original/impact-radius-partner-jobs-v15.yml",
+   "openapi/_original/impact-radius-partner-mediaproperties-v15.yaml",
+   "openapi/_original/impact-radius-partner-mediaproperties-v15.yml",
+   "openapi/_original/impact-radius-partner-promo-codes-v15.yaml",
+   "openapi/_original/impact-radius-partner-promo-codes-v15.yml",
+   "openapi/_original/impact-radius-partner-promocodeexceptionlists-v15.yaml",
+   "openapi/_original/impact-radius-partner-promocodeexceptionlists-v15.yml",
+   "openapi/_original/impact-radius-partner-promotions-v15.yaml",
+   "openapi/_original/impact-radius-partner-promotions-v15.yml",
+   "openapi/_original/impact-radius-partner-reports-v15.yaml",
+   "openapi/_original/impact-radius-partner-reports-v15.yml",
+   "openapi/_original/impact-radius-partner-stores-v15.yaml",
+   "openapi/_original/impact-radius-partner-stores-v15.yml",
+   "openapi/_original/impact-radius-partner-taxdocument-v15.yaml",
+   "openapi/_original/impact-radius-partner-taxdocument-v15.yml",
+   "openapi/_original/impact-radius-partner-trackinglinks-v15.yaml",
+   "openapi/_original/impact-radius-partner-trackinglinks-v15.yml",
+   "openapi/_original/impact-radius-partner-users-v15.yaml",
+   "openapi/_original/impact-radius-partner-users-v15.yml",
+   "openapi/_original/impact-radius-partner-withdrawalsettings-v15.yaml",
+   "openapi/_original/impact-radius-partner-withdrawalsettings-v15.yml"
+  ]
+ },
+ {
+  "slug": "imprint",
+  "specs": [
+   "openapi/_original/imprint-openapi.yml"
+  ]
+ },
+ {
+  "slug": "incentivio",
+  "specs": [
+   "openapi/_original/incentivio-admin-api-openapi.json",
+   "openapi/_original/incentivio-admin-api-openapi.yml",
+   "openapi/_original/incentivio-mobile-api-openapi.json",
+   "openapi/_original/incentivio-mobile-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "influitive",
+  "specs": [
+   "openapi/_original/influitive-events-openapi.json"
+  ]
+ },
+ {
+  "slug": "kangaroo-rewards",
+  "specs": [
+   "openapi/_original/business_api.yaml",
+   "openapi/_original/customer_api.yaml"
+  ]
+ },
+ {
+  "slug": "kard",
+  "specs": [
+   "openapi/_original/kard-api-reference-openapi.yaml",
+   "openapi/_original/kard-legacy-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "lightspeed",
+  "specs": [
+   "openapi/_original/lightspeed-k-series-openapi.json",
+   "openapi/_original/lightspeed-k-series-openapi.yml",
+   "openapi/_original/lightspeed-x-series-openapi.json"
+  ]
+ },
+ {
+  "slug": "lucra-sports",
+  "specs": [
+   "openapi/_original/lucra-sports-forge-openapi.json"
+  ]
+ },
+ {
+  "slug": "lunchbox",
+  "specs": [
+   "openapi/_original/lunchbox-core-openapi.yml",
+   "openapi/_original/lunchbox-loyalty-openapi.yml",
+   "openapi/_original/lunchbox-management-openapi.yml",
+   "openapi/_original/lunchbox-pos-openapi.yml"
+  ]
+ },
+ {
+  "slug": "makeup-land",
+  "specs": [
+   "openapi/_original/makeup-land-openapi.json",
+   "openapi/_original/makeup-land-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nectar-hr",
+  "specs": [
+   "openapi/_original/nectar-hr-openapi.yml"
+  ]
+ },
+ {
+  "slug": "nift",
+  "specs": [
+   "openapi/_original/nift-partners-openapi.yml"
+  ]
+ },
+ {
+  "slug": "olo",
+  "specs": [
+   "openapi/_original/olo-ordering-openapi.yml",
+   "openapi/_original/olo-promotions-openapi.yml"
+  ]
+ },
+ {
+  "slug": "open-loyalty",
+  "specs": [
+   "openapi/_original/open-loyalty-openapi.yml"
+  ]
+ },
+ {
+  "slug": "paystone",
+  "specs": [
+   "openapi/_original/paystone-datacandy-openapi.yml"
+  ]
+ },
+ {
+  "slug": "playable",
+  "specs": [
+   "openapi/_original/playable-api-openapi.yml",
+   "openapi/_original/playable-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "pointcheckout",
+  "specs": [
+   "openapi/_original/pointcheckout-merchant-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "publiq",
+  "specs": [
+   "openapi/_original/museumpassmusees-partner-api.json",
+   "openapi/_original/publiq-museumpassmusees-partner-openapi.yml",
+   "openapi/_original/publiq-uitdatabank-entry-openapi.yml",
+   "openapi/_original/publiq-uitdatabank-search-openapi.yml",
+   "openapi/_original/publiq-uitdatabank-taxonomy-openapi.yml",
+   "openapi/_original/publiq-uitpas-openapi.yml",
+   "openapi/_original/uitdatabank-entry.json",
+   "openapi/_original/uitdatabank-search.json",
+   "openapi/_original/uitdatabank-taxonomy.json",
+   "openapi/_original/uitpas-uitpas.json"
+  ]
+ },
+ {
+  "slug": "punchh",
+  "specs": [
+   "openapi/_original/punchh-mobile-api-openapi.yml",
+   "openapi/_original/punchh-mobile-redemptions-legacy-openapi.yml",
+   "openapi/_original/punchh-mobile-redemptions-v2-openapi.yml",
+   "openapi/_original/punchh-mobile-subscription-openapi.yml",
+   "openapi/_original/punchh-online-ordering-redemptions-legacy-openapi.yml",
+   "openapi/_original/punchh-online-ordering-redemptions-v2-openapi.yml",
+   "openapi/_original/punchh-online-ordering-sso-api-openapi.yml",
+   "openapi/_original/punchh-online-ordering-subscription-openapi.yml",
+   "openapi/_original/punchh-platform-functions-api-openapi.yml",
+   "openapi/_original/punchh-platform-functions-headless-offers-openapi.yml",
+   "openapi/_original/punchh-platform-functions-offers-ingestion-openapi.yml",
+   "openapi/_original/punchh-platform-functions-subscription-openapi.yml",
+   "openapi/_original/punchh-pos-api-openapi.yml",
+   "openapi/_original/punchh-pos-redemptions-legacy-openapi.yml",
+   "openapi/_original/punchh-pos-redemptions-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reachdesk",
+  "specs": [
+   "openapi/_original/reachdesk-api-openapi.yml",
+   "openapi/_original/reachdesk-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "regal-entertainment-group",
+  "specs": [
+   "openapi/_original/regal-cinema-openapi.yml"
+  ]
+ },
+ {
+  "slug": "reloadly",
+  "specs": [
+   "openapi/_original/reloadly-airtime-openapi.yml",
+   "openapi/_original/reloadly-gift-cards-openapi.yml"
+  ]
+ },
+ {
+  "slug": "runa",
+  "specs": [
+   "openapi/_original/runa-payouts-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shell",
+  "specs": [
+   "openapi/_original/shell-b2b-mobility-openapi.yml",
+   "openapi/_original/shell-loyalty-openapi.yml",
+   "openapi/_original/shell-lubricants-openapi.yml"
+  ]
+ },
+ {
+  "slug": "shopback",
+  "specs": [
+   "openapi/_original/shopback-in-store-payments-openapi.yml",
+   "openapi/_original/shopback-online-payments-openapi.yml"
+  ]
+ },
+ {
+  "slug": "smartrr",
+  "specs": [
+   "openapi/_original/smartrr-openapi.yml"
+  ]
+ },
+ {
+  "slug": "smile-io",
+  "specs": [
+   "openapi/_original/smile-io-openapi.yml"
+  ]
+ },
+ {
+  "slug": "snackmagic",
+  "specs": [
+   "openapi/_original/snackmagic-stadium-openapi.yml"
+  ]
+ },
+ {
+  "slug": "splio",
+  "specs": [
+   "openapi/_original/splio-campaign-api-v1-openapi.json",
+   "openapi/_original/splio-customer-platform-openapi.json",
+   "openapi/_original/splio-doc-swagger2.json"
+  ]
+ },
+ {
+  "slug": "square",
+  "specs": [
+   "openapi/_original/square-openapi.yml"
+  ]
+ },
+ {
+  "slug": "stamped",
+  "specs": [
+   "openapi/_original/stamped-loyalty-operations-openapi.json",
+   "openapi/_original/stamped-merchant-data-openapi.json"
+  ]
+ },
+ {
+  "slug": "starbucks",
+  "specs": [
+   "openapi/_original/starbucks-starbucks-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "starwood-hotels-and-resorts",
+  "specs": [
+   "openapi/_original/starwood-hotel-search-openapi.yml"
+  ]
+ },
+ {
+  "slug": "switchfly",
+  "specs": [
+   "openapi/_original/switchfly-loyalty-openapi.json"
+  ]
+ },
+ {
+  "slug": "talkable",
+  "specs": [
+   "openapi/_original/talkable-v2-openapi-original.yml",
+   "openapi/_original/talkable-webhooks-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "talon-one",
+  "specs": [
+   "openapi/_original/talon-one-integration-api-openapi.yml",
+   "openapi/_original/talon-one-management-api-openapi.yml",
+   "openapi/_original/talon-one-outbound-notifications-openapi.yml",
+   "openapi/_original/talon-one-shopify-integration-api-openapi.yml",
+   "openapi/_original/talon-one-third-party-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tango",
+  "specs": [
+   "openapi/_original/tango-raas-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tango-card",
+  "specs": [
+   "openapi/_original/tango-raas-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "td-bank",
+  "specs": [
+   "openapi/_original/td-bank-account-basic-api-openapi.yml",
+   "openapi/_original/td-bank-account-detailed-api-openapi.yml",
+   "openapi/_original/td-bank-apps-management-api-openapi.yml",
+   "openapi/_original/td-bank-bill-payment-api-openapi.yml",
+   "openapi/_original/td-bank-consent-api-openapi.yml",
+   "openapi/_original/td-bank-customer-api-openapi.yml",
+   "openapi/_original/td-bank-service-token-api-openapi.yml",
+   "openapi/_original/td-bank-token-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "thanx",
+  "specs": [
+   "openapi/_original/thanx-consumer-api-openapi.yml",
+   "openapi/_original/thanx-loyalty-api-openapi.yml",
+   "openapi/_original/thanx-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tillo",
+  "specs": [
+   "openapi/_original/tillo-gift-card-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tremendous",
+  "specs": [
+   "openapi/_original/tremendous-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "united-airlines",
+  "specs": [
+   "openapi/_original/united-airlines-ndc-openapi.yml"
+  ]
+ },
+ {
+  "slug": "xoxoday",
+  "specs": [
+   "openapi/_original/openapi.yml"
+  ]
+ },
+ {
+  "slug": "yotpo",
+  "specs": [
+   "openapi/_original/yotpo-openapi.yml"
+  ]
+ }
+]

@@ -1,0 +1,30 @@
+provider: talkable
+apis_io: https://apis.io/providers/talkable/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/talkable-v2-openapi-original.yml#GET /api/v2/loyalty/members/{email}
+    - openapi/_original/talkable-v2-openapi-original.yml#PUT /api/v2/loyalty/members/{email}
+  reward:
+    path_segment:
+    - rewards
+    - offers
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/talkable-v2-openapi-original.yml#GET /api/v2/offers/{short_url_code}
+    - openapi/_original/talkable-v2-openapi-original.yml#GET /api/v2/people/{person_slug}/rewards
+    - openapi/_original/talkable-v2-openapi-original.yml#GET /api/v2/rewards
+  referral:
+    path_segment:
+    - referral
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/talkable-v2-openapi-original.yml#PUT /api/v2/origins/{origin_slug}/referral

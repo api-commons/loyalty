@@ -1,0 +1,15 @@
+provider: starbucks
+apis_io: https://apis.io/providers/starbucks/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - accounts
+    properties:
+      id: id
+      status: status
+      tier_id: tier
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/starbucks-starbucks-api-openapi.yml#GET /v1/loyalty/accounts/{accountId}

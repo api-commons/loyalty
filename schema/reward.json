@@ -1,0 +1,144 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/loyalty/main/schema/reward.json",
+  "title": "Reward",
+  "description": "The common reward in Loyalty, distilled from 10 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.9,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "created_at",
+        "creationDate",
+        "created_date",
+        "createdAt"
+      ],
+      "format": "date-time"
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.9,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "id",
+        "reward_id",
+        "uuid",
+        "rewardId",
+        "@id",
+        "external_id"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.8,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "status",
+        "state"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "description",
+        "terms",
+        "details"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "name",
+        "title"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "type",
+        "category",
+        "reward_type",
+        "@type"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.5,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "updated_at",
+        "updated_date",
+        "updatedAt"
+      ],
+      "format": "date-time"
+    },
+    "image_url": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.4,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "image_url",
+        "imageUrl"
+      ]
+    },
+    "email": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.3,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "email"
+      ],
+      "format": "email"
+    },
+    "member_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.3,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "customer",
+        "person_id",
+        "memberId"
+      ]
+    },
+    "points": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.3,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "points",
+        "amount",
+        "pointsAmount"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "loyalty",
+    "concept": "reward",
+    "providers": 10,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

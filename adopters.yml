@@ -1,0 +1,103 @@
+context: loyalty
+generated: '2026-11-10'
+adopters:
+- provider: ansa
+  apis_io: https://apis.io/providers/ansa/
+  crosswalk: crosswalk/ansa.yml
+  concepts:
+  - referral
+- provider: antavo
+  apis_io: https://apis.io/providers/antavo/
+  crosswalk: crosswalk/antavo.yml
+  concepts:
+  - member
+  - reward
+- provider: extole
+  apis_io: https://apis.io/providers/extole/
+  crosswalk: crosswalk/extole.yml
+  concepts:
+  - member
+  - referral
+  - reward
+- provider: gameball
+  apis_io: https://apis.io/providers/gameball/
+  crosswalk: crosswalk/gameball.yml
+  concepts:
+  - member
+  - referral
+  - reward
+- provider: hang
+  apis_io: https://apis.io/providers/hang/
+  crosswalk: crosswalk/hang.yml
+  concepts:
+  - member
+  - reward
+- provider: harbor
+  apis_io: https://apis.io/providers/harbor/
+  crosswalk: crosswalk/harbor.yml
+  concepts:
+  - member
+  - reward
+- provider: impact
+  apis_io: https://apis.io/providers/impact/
+  crosswalk: crosswalk/impact.yml
+  concepts:
+  - referral
+- provider: lunchbox
+  apis_io: https://apis.io/providers/lunchbox/
+  crosswalk: crosswalk/lunchbox.yml
+  concepts:
+  - member
+- provider: paystone
+  apis_io: https://apis.io/providers/paystone/
+  crosswalk: crosswalk/paystone.yml
+  concepts:
+  - member
+  - reward
+- provider: punchh
+  apis_io: https://apis.io/providers/punchh/
+  crosswalk: crosswalk/punchh.yml
+  concepts:
+  - member
+  - referral
+  - reward
+- provider: regal-entertainment-group
+  apis_io: https://apis.io/providers/regal-entertainment-group/
+  crosswalk: crosswalk/regal-entertainment-group.yml
+  concepts:
+  - member
+- provider: splio
+  apis_io: https://apis.io/providers/splio/
+  crosswalk: crosswalk/splio.yml
+  concepts:
+  - member
+  - reward
+- provider: square
+  apis_io: https://apis.io/providers/square/
+  crosswalk: crosswalk/square.yml
+  concepts:
+  - member
+  - reward
+- provider: starbucks
+  apis_io: https://apis.io/providers/starbucks/
+  crosswalk: crosswalk/starbucks.yml
+  concepts:
+  - member
+- provider: talkable
+  apis_io: https://apis.io/providers/talkable/
+  crosswalk: crosswalk/talkable.yml
+  concepts:
+  - member
+  - referral
+  - reward
+- provider: talon-one
+  apis_io: https://apis.io/providers/talon-one/
+  crosswalk: crosswalk/talon-one.yml
+  concepts:
+  - referral
+- provider: tremendous
+  apis_io: https://apis.io/providers/tremendous/
+  crosswalk: crosswalk/tremendous.yml
+  concepts:
+  - member
+  - reward

@@ -1,0 +1,50 @@
+provider: punchh
+apis_io: https://apis.io/providers/punchh/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties:
+      email: email
+      member_id: user_id
+      created_at: created_at
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/punchh-platform-functions-api-openapi.yml#DELETE /api2/dashboard/custom_segments/members
+    - openapi/_original/punchh-platform-functions-api-openapi.yml#GET /api2/dashboard/custom_segments/members
+    - openapi/_original/punchh-platform-functions-api-openapi.yml#POST /api2/dashboard/custom_segments/members
+  reward:
+    path_segment:
+    - redemptions
+    - reward
+    - offers
+    - rewards
+    - redemption
+    properties:
+      created_at: created_at
+      id:
+      - reward_id
+      - id
+      status: status
+      type:
+      - type
+      - category
+      updated_at: updated_at
+      email: email
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/punchh-mobile-api-openapi.yml#GET /api2/mobile/offers
+    - openapi/_original/punchh-mobile-api-openapi.yml#POST /api2/mobile/loyalty_transfers/reward
+    - openapi/_original/punchh-mobile-redemptions-legacy-openapi.yml#DELETE /api2/mobile/redemptions/{redemption_id}
+    - openapi/_original/punchh-mobile-redemptions-legacy-openapi.yml#POST /api2/mobile/redemptions/reward
+    - openapi/_original/punchh-online-ordering-redemptions-legacy-openapi.yml#DELETE /api/auth/redemptions
+  referral:
+    path_segment:
+    - referrals
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/punchh-mobile-api-openapi.yml#GET /api2/mobile/{checkin_id}/referrals
+    - openapi/_original/punchh-mobile-api-openapi.yml#POST /api2/mobile/{checkin_id}/referrals

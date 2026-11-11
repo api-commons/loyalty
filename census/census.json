@@ -1,0 +1,2428 @@
+{
+ "cohort_size": 77,
+ "unreadable": [],
+ "concepts": {
+  "member": {
+   "antavo": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "status": "string",
+     "metadata": "object",
+     "payload": "object"
+    },
+    "evidence": [
+     "openapi/_original/antavo-clubs-openapi.yml#GET /v1/clubs/{club_id}/members",
+     "openapi/_original/antavo-clubs-openapi.yml#GET /v1/clubs/{club_id}/members/{customer_id}"
+    ]
+   },
+   "dotdigital": {
+    "segments": [
+     "participants"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "role": "string"
+    },
+    "evidence": [
+     "openapi/_original/chat-api.json#GET /cpaas/chats/{chatId}/participants",
+     "openapi/_original/conversation-api.json#DELETE /cpaas/conversations/{conversationId}/participants",
+     "openapi/_original/conversation-api.json#GET /cpaas/conversations/{conversationId}/participants",
+     "openapi/_original/conversation-api.json#POST /cpaas/conversations/{conversationId}/participants",
+     "openapi/_original/dotdigital-chat-openapi.yml#GET /cpaas/chats/{chatId}/participants",
+     "openapi/_original/dotdigital-conversation-openapi.yml#DELETE /cpaas/conversations/{conversationId}/participants",
+     "openapi/_original/dotdigital-conversation-openapi.yml#GET /cpaas/conversations/{conversationId}/participants",
+     "openapi/_original/dotdigital-conversation-openapi.yml#POST /cpaas/conversations/{conversationId}/participants"
+    ]
+   },
+   "extole": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/extole-management-openapi.json#GET /v1/audiences/{audience_id}/members"
+    ]
+   },
+   "gameball": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection"
+    ],
+    "properties": {
+     "response": "object",
+     "success": "boolean",
+     "errorMsg": "string",
+     "errorCode": "integer",
+     "liveMode": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/gameball-openapi.json#DELETE /api/v1/Bots/family/{familyId}/members/{memberId}",
+     "openapi/_original/gameball-openapi.json#GET /api/v1/Bots/family/{familyId}/members"
+    ]
+   },
+   "hang": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "program_memberships": "array",
+     "total_records": "number"
+    },
+    "evidence": [
+     "openapi/_original/hang-openapi.json#GET /v2/admin/program-segments/{id}/members"
+    ]
+   },
+   "harbor": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "externalId": "string",
+     "communityId": "string",
+     "displayName": "string",
+     "email": "string",
+     "pointsBalance": "integer",
+     "totalPointsEarned": "integer",
+     "tier": "object",
+     "referralCode": "string",
+     "status": "string",
+     "joinedAt": "string",
+     "lastActiveAt": "string",
+     "metadata": "object"
+    },
+    "evidence": [
+     "openapi/_original/harbor-openapi.yml#GET /communities/{communityId}/members",
+     "openapi/_original/harbor-openapi.yml#GET /communities/{communityId}/members/{memberId}",
+     "openapi/_original/harbor-openapi.yml#PATCH /communities/{communityId}/members/{memberId}",
+     "openapi/_original/harbor-openapi.yml#POST /communities/{communityId}/members"
+    ]
+   },
+   "lunchbox": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/lunchbox-core-openapi.yml#GET /orders/group/members",
+     "openapi/_original/lunchbox-core-openapi.yml#POST /orders/group/members",
+     "openapi/_original/lunchbox-core-openapi.yml#POST /orders/group/{order_id}/members"
+    ]
+   },
+   "paystone": {
+    "segments": [
+     "member"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "hydra:totalItems": "integer",
+     "hydra:search": "object",
+     "@id": "string",
+     "@type": "string",
+     "hydra:first": "string",
+     "hydra:last": "string",
+     "hydra:previous": "string",
+     "hydra:next": "string",
+     "@context": null,
+     "displayName": null,
+     "url": null,
+     "isActive": [
+      "boolean",
+      "null"
+     ],
+     "allowDigitalCardCreation": [
+      "boolean",
+      "null"
+     ],
+     "termsConditionsUrl": null,
+     "privacyPolicyUrl": null
+    },
+    "evidence": [
+     "openapi/_original/paystone-datacandy-openapi.yml#GET /v1/clients/{accessKey}/portals/member"
+    ]
+   },
+   "punchh": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "DELETE collection",
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "custom_segment_member_id": "string",
+     "custom_segment_id": "integer",
+     "email": "string",
+     "user_id": "integer",
+     "created_at": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/punchh-platform-functions-api-openapi.yml#DELETE /api2/dashboard/custom_segments/members",
+     "openapi/_original/punchh-platform-functions-api-openapi.yml#GET /api2/dashboard/custom_segments/members",
+     "openapi/_original/punchh-platform-functions-api-openapi.yml#POST /api2/dashboard/custom_segments/members"
+    ]
+   },
+   "regal-entertainment-group": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "memberId": "string",
+     "name": "string",
+     "email": "string",
+     "tier": "string",
+     "creditBalance": "integer",
+     "lifetimeCredits": "integer",
+     "joinDate": "string"
+    },
+    "evidence": [
+     "openapi/_original/regal-cinema-openapi.yml#GET /loyalty/members/{memberId}"
+    ]
+   },
+   "splio": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "program_id": "integer",
+     "contact_id": "string",
+     "card_code": "string",
+     "card_expire_at": "string",
+     "birthday": "string",
+     "program_joined_at": "string",
+     "forced_tier_name": "string",
+     "custom_fields": "array"
+    },
+    "evidence": [
+     "openapi/_original/splio-customer-platform-openapi.json#GET /data/fields/members",
+     "openapi/_original/splio-customer-platform-openapi.json#GET /loyalty/members/{id}",
+     "openapi/_original/splio-customer-platform-openapi.json#GET /loyalty/v1/programs/{id}/members",
+     "openapi/_original/splio-customer-platform-openapi.json#PATCH /loyalty/members/{id}",
+     "openapi/_original/splio-customer-platform-openapi.json#POST /loyalty/members",
+     "openapi/_original/splio-doc-swagger2.json#GET /data/fields/members",
+     "openapi/_original/splio-doc-swagger2.json#GET /loyalty/members/{id}",
+     "openapi/_original/splio-doc-swagger2.json#GET /loyalty/v1/programs/{id}/members",
+     "openapi/_original/splio-doc-swagger2.json#PATCH /loyalty/members/{id}",
+     "openapi/_original/splio-doc-swagger2.json#POST /loyalty/members"
+    ]
+   },
+   "square": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "program_id": "string",
+     "balance": "integer",
+     "lifetime_points": "integer",
+     "customer_id": "string",
+     "enrolled_at": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "mapping": "object",
+     "expiring_point_deadlines": "array",
+     "loyalty_account": "object",
+     "idempotency_key": "string"
+    },
+    "evidence": [
+     "openapi/_original/square-openapi.yml#GET /v2/loyalty/accounts/{account_id}",
+     "openapi/_original/square-openapi.yml#POST /v2/loyalty/accounts"
+    ]
+   },
+   "starbucks": {
+    "segments": [
+     "accounts"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "memberName": "string",
+     "tier": "string",
+     "starBalance": "integer",
+     "ytdStars": "integer",
+     "memberSince": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/starbucks-starbucks-api-openapi.yml#GET /v1/loyalty/accounts/{accountId}"
+    ]
+   },
+   "talkable": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "custom_properties": null,
+     "member_dates": "array"
+    },
+    "evidence": [
+     "openapi/_original/talkable-v2-openapi-original.yml#GET /api/v2/loyalty/members/{email}",
+     "openapi/_original/talkable-v2-openapi-original.yml#PUT /api/v2/loyalty/members/{email}"
+    ]
+   },
+   "tremendous": {
+    "segments": [
+     "members"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "name": "string",
+     "email": "string",
+     "role": "string",
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/tremendous-api-openapi.yml#GET /members",
+     "openapi/_original/tremendous-api-openapi.yml#POST /members"
+    ]
+   }
+  },
+  "reward": {
+   "accrue-savings": {
+    "segments": [
+     "rewards"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "attributes": "object"
+    },
+    "evidence": [
+     "openapi/_original/accrue-savings-merchant-api-openapi.yaml#DELETE /api/v1/rewards/{id}",
+     "openapi/_original/accrue-savings-merchant-api-openapi.yaml#GET /api/v1/rewards",
+     "openapi/_original/accrue-savings-merchant-api-openapi.yaml#GET /api/v1/rewards/{id}",
+     "openapi/_original/accrue-savings-merchant-api-openapi.yaml#PATCH /api/v1/rewards/{id}",
+     "openapi/_original/accrue-savings-merchant-api-openapi.yaml#POST /api/v1/rewards"
+    ]
+   },
+   "antavo": {
+    "segments": [
+     "rewards",
+     "reward",
+     "offers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "POST item",
+     "PUT collection"
+    ],
+    "properties": {
+     "id": "string",
+     "title": "string",
+     "starts_at": "string",
+     "ends_at": "string",
+     "description": "string",
+     "status": "string",
+     "image": "object",
+     "points": "integer",
+     "card_title": "string",
+     "card_description": "string",
+     "stores": "array",
+     "type": "string",
+     "terms": "string",
+     "instructions": "string",
+     "category": "object",
+     "stock": "integer",
+     "max_claims": "integer",
+     "max_price": "integer",
+     "price_step": "integer",
+     "coupon_pool": "string",
+     "exchange_rate": "number",
+     "transferable": "boolean",
+     "transfer_points": "integer",
+     "transfer_limit": "integer",
+     "transfer_coupon_expiration": "string",
+     "transfer_coupon_expires_in": "string",
+     "custom_data": "object",
+     "_actions": "object",
+     "claims": "object",
+     "gallery": "array",
+     "spent": "integer",
+     "created_at": "string",
+     "coupons": "array",
+     "last_claimed_at": "string",
+     "first_claimed_at": "string",
+     "name": "object",
+     "redeem_instructions": "object",
+     "account": "object",
+     "claim_button_label": "object",
+     "segments": "array",
+     "cost": "string",
+     "hide_restricted": "boolean",
+     "hidden": "boolean",
+     "restricted_message": "object",
+     "repeat_interval": "string",
+     "notifications": "boolean",
+     "user_notifications": "boolean",
+     "price": "object",
+     "user_notification": "string",
+     "weight": "number",
+     "min_total": "number",
+     "max_total": "number",
+     "required_match": "string",
+     "required_items": "array",
+     "eligible_match": "string",
+     "eligible_items": "array",
+     "discount": "object",
+     "is_exclusive": "boolean",
+     "is_eligible": "boolean",
+     "cart": "object",
+     "customer": "string",
+     "store": "string",
+     "eligible_only": "boolean",
+     "image_url": "string"
+    },
+    "evidence": [
+     "openapi/_original/antavo-display-openapi.yml#GET /customers/{customer_id}/activities/offers",
+     "openapi/_original/antavo-display-openapi.yml#GET /customers/{customer_id}/activities/rewards",
+     "openapi/_original/antavo-display-openapi.yml#GET /customers/{customer_id}/activities/rewards/{reward_id}",
+     "openapi/_original/antavo-display-openapi.yml#GET /customers/{customer_id}/rewards",
+     "openapi/_original/antavo-entities-openapi.yml#DELETE /entities/rewards/reward/{entity_id}",
+     "openapi/_original/antavo-entities-openapi.yml#GET /entities/rewards/reward",
+     "openapi/_original/antavo-entities-openapi.yml#GET /entities/rewards/reward/{entity_id}",
+     "openapi/_original/antavo-entities-openapi.yml#POST /entities/rewards/reward/{entity_id}",
+     "openapi/_original/antavo-entities-openapi.yml#PUT /entities/rewards/reward",
+     "openapi/_original/antavo-offers-openapi.yml#POST /offers/",
+     "openapi/_original/antavo-rewards-openapi.yml#GET /rewards",
+     "openapi/_original/antavo-rewards-openapi.yml#GET /rewards/{reward_id}"
+    ]
+   },
+   "bonusly": {
+    "segments": [
+     "redemptions",
+     "rewards"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "created_at": "string",
+     "display_name": "string",
+     "amount": "integer",
+     "amount_with_currency": "string",
+     "reward_amount": "number",
+     "currency_code": "string",
+     "reward_type": "string",
+     "status": "string",
+     "user": "object",
+     "request": "string",
+     "name": "string",
+     "type": "string",
+     "description": "string",
+     "image_url": "string",
+     "denominations": "array",
+     "countries": "array"
+    },
+    "evidence": [
+     "openapi/_original/bonusly-openapi.yml#GET /redemptions",
+     "openapi/_original/bonusly-openapi.yml#GET /redemptions/{id}",
+     "openapi/_original/bonusly-openapi.yml#GET /rewards",
+     "openapi/_original/bonusly-openapi.yml#GET /users/{id}/redemptions"
+    ]
+   },
+   "bybe": {
+    "segments": [
+     "offers"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/bybe-api-openapi-original.yml#GET /v1/offers",
+     "openapi/_original/bybe-api-openapi-original.yml#GET /v1/offers/{id}"
+    ]
+   },
+   "cello": {
+    "segments": [
+     "reward"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "eligible": "boolean",
+     "reward": null,
+     "signupId": "string",
+     "signupAt": "string",
+     "referralUcc": "string",
+     "campaignId": "string",
+     "campaignRevision": "string"
+    },
+    "evidence": [
+     "openapi/_original/cello-openapi-original.json#GET /new-users/{productUserId}/reward"
+    ]
+   },
+   "extole": {
+    "segments": [
+     "rewards"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PUT item"
+    ],
+    "properties": {
+     "action_id": "string",
+     "campaign_id": "string",
+     "cause_event_id": "string",
+     "container": "string",
+     "created_at": "string",
+     "data": "object",
+     "email": "string",
+     "expires_at": "string",
+     "face_value": "number",
+     "face_value_type": "string",
+     "journey_key": "object",
+     "journey_name": "string",
+     "partner_reward_id": "string",
+     "partner_reward_key_type": "string",
+     "partner_reward_supplier_id": "string",
+     "partner_user_id": "string",
+     "person_id": "string",
+     "reward_id": "string",
+     "reward_supplier_id": "string",
+     "root_event_id": "string",
+     "sandbox": "string",
+     "state": "string",
+     "created_date": "string",
+     "earned_date": "string",
+     "expiry_date": "string",
+     "id": "string",
+     "name": "string",
+     "program": "string",
+     "redeemed_date": "string",
+     "tags": "array",
+     "updated_date": "string",
+     "value_of_rewarded_event": "number"
+    },
+    "evidence": [
+     "openapi/_original/extole-integration-server-to-extole-openapi.json#GET /v2/rewards",
+     "openapi/_original/extole-integration-server-to-extole-openapi.json#GET /v2/rewards/{reward_id}",
+     "openapi/_original/extole-integration-server-to-extole-openapi.json#GET /v5/persons/{person_id}/rewards",
+     "openapi/_original/extole-integration-server-to-extole-openapi.json#GET /v5/persons/{person_id}/rewards/{reward_id}",
+     "openapi/_original/extole-integration-server-to-extole-openapi.json#PUT /v2/rewards/{reward_id}"
+    ]
+   },
+   "gameball": {
+    "segments": [
+     "reward",
+     "redemption"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "response": "boolean",
+     "success": "boolean",
+     "errorMsg": "string",
+     "errorCode": "integer",
+     "liveMode": "boolean",
+     "isDeleted": "boolean",
+     "creationDate": "string",
+     "lastUpdate": "string",
+     "action": "object",
+     "reward": "object",
+     "playerUniqueId": "string",
+     "email": "string",
+     "mobileNumber": "string",
+     "transactionOnGameballSystemId": "integer",
+     "transactionType": "object",
+     "amount": "string",
+     "pointsAmount": "string",
+     "transactionOnClientSystemId": "string",
+     "reversedTransactionOnClientSystemId": "string",
+     "playerTypeId": "integer",
+     "transactionTime": "string",
+     "playerAttributes": "object",
+     "lineItems": "array",
+     "merchant": "object",
+     "holdReference": "string",
+     "ignoreHold": "boolean",
+     "isGuest": "boolean",
+     "couponPointsSettingType": "integer",
+     "bodyHashed": "string",
+     "details": "string",
+     "username": "string",
+     "points": "integer",
+     "usedCouponCodes": "string",
+     "familyWalletId": "integer",
+     "expiryDateInDays": "integer",
+     "transactionStatistics": "object",
+     "clientPointsSettings": "array",
+     "isSucceeded": "boolean",
+     "methodName": "string",
+     "status": "object",
+     "data": "boolean",
+     "clientId": "integer",
+     "challengeId": "integer"
+    },
+    "evidence": [
+     "openapi/_original/gameball-openapi.json#GET /api/v1/Programs/redemption",
+     "openapi/_original/gameball-openapi.json#GET /api/v1/Programs/reward",
+     "openapi/_original/gameball-openapi.json#POST /api/v1/Integrations/Action/Reward",
+     "openapi/_original/gameball-openapi.json#POST /api/v1/Integrations/Transaction/Reward",
+     "openapi/_original/gameball-openapi.json#POST /internal/v1/world-cup/leaderboard/reward"
+    ]
+   },
+   "hang": {
+    "segments": [
+     "redemptions",
+     "rewards"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "date": "number",
+     "token_id": "string",
+     "description": "string",
+     "code": "string",
+     "uuid": "string",
+     "promo_code": "string",
+     "state": "string",
+     "expires_at": "number",
+     "rewards": "array",
+     "name": "string",
+     "terms_and_conditions": "string",
+     "start_date": "number",
+     "end_date": "number",
+     "redemption_method": "string",
+     "status": "string",
+     "interval": "number",
+     "limit": "number",
+     "priority": "number",
+     "pos_instructions": "string",
+     "redemption_instructions": "string",
+     "reward_group": "string",
+     "is_program_reward": "boolean",
+     "is_promoted_reward": "boolean",
+     "reward_type": "string",
+     "reward_value": "number",
+     "achievement_id": "string",
+     "controlled_by": "string",
+     "image_url": "string",
+     "video_url": "string",
+     "default_loot_box_reward_image_url": "string",
+     "redemption_steps": "array",
+     "store_discount_url": "string",
+     "partner_metadata": "object",
+     "created_at": "number",
+     "updated_at": "number",
+     "is_welcome_reward": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/hang-openapi.json#GET /v2/admin/rewards/{reward_uuid}",
+     "openapi/_original/hang-openapi.json#GET /v2/program-memberships/{program_membership_id}/redemptions",
+     "openapi/_original/hang-openapi.json#GET /v2/program-memberships/{program_membership_id}/rewards",
+     "openapi/_original/hang-openapi.json#GET /wallets/{wallet_address}/redemptions",
+     "openapi/_original/hang-openapi.json#PATCH /v2/admin/rewards/{reward_uuid}",
+     "openapi/_original/hang-openapi.json#POST /v2/admin/rewards",
+     "openapi/_original/hang-openapi.json#POST /v2/program-memberships/{program_membership_id}/redemptions",
+     "openapi/_original/hang-openapi.json#POST /wallets/{wallet_address}/redemptions"
+    ]
+   },
+   "harbor": {
+    "segments": [
+     "redemptions",
+     "rewards"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "communityId": "string",
+     "title": "string",
+     "description": "string",
+     "pointCost": "integer",
+     "type": "string",
+     "status": "string",
+     "quantity": "integer",
+     "remainingQuantity": "integer",
+     "imageUrl": "string",
+     "memberId": "string",
+     "rewardId": "string",
+     "reward": "object",
+     "pointsSpent": "integer",
+     "fulfillmentData": "object",
+     "createdAt": "string",
+     "updatedAt": "string",
+     "shippingAddress": "object"
+    },
+    "evidence": [
+     "openapi/_original/harbor-openapi.yml#GET /communities/{communityId}/redemptions",
+     "openapi/_original/harbor-openapi.yml#GET /communities/{communityId}/rewards",
+     "openapi/_original/harbor-openapi.yml#POST /communities/{communityId}/redemptions"
+    ]
+   },
+   "impact": {
+    "segments": [
+     "reward"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "uniqueId": "string",
+     "dateCreated": "integer",
+     "programId": "string",
+     "programRewardKey": "string",
+     "globalRewardKey": "string",
+     "referralId": "string",
+     "type": "string",
+     "dateGiven": "integer",
+     "dateExpires": "integer",
+     "dateCancelled": "integer",
+     "dateScheduledFor": "integer",
+     "cancellable": "boolean",
+     "rewardSource": "string",
+     "unit": "string",
+     "discountPercent": "integer",
+     "name": "string",
+     "description": "string",
+     "assignedCredit": "integer",
+     "redeemedCredit": "integer",
+     "redemptions": "array",
+     "currency": "string",
+     "amount": "integer",
+     "fuelTankCode": "string",
+     "fueltankType": "string"
+    },
+    "evidence": [
+     "openapi/_original/impact-brand-advocate-reward-v13-openapi.yml#GET /{tenant_alias}/reward",
+     "openapi/_original/impact-brand-advocate-reward-v13-openapi.yml#GET /{tenant_alias}/reward/{id}",
+     "openapi/_original/impact-brand-advocate-reward-v13.yaml#GET /{tenant_alias}/reward",
+     "openapi/_original/impact-brand-advocate-reward-v13.yaml#GET /{tenant_alias}/reward/{id}"
+    ]
+   },
+   "impact-radius": {
+    "segments": [
+     "reward"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "uniqueId": "string",
+     "dateCreated": "integer",
+     "programId": "string",
+     "programRewardKey": "string",
+     "globalRewardKey": "string",
+     "referralId": "string",
+     "type": "string",
+     "dateGiven": "integer",
+     "dateExpires": "integer",
+     "dateCancelled": "integer",
+     "dateScheduledFor": "integer",
+     "cancellable": "boolean",
+     "rewardSource": "string",
+     "unit": "string",
+     "discountPercent": "integer",
+     "name": "string",
+     "description": "string",
+     "assignedCredit": "integer",
+     "redeemedCredit": "integer",
+     "redemptions": "array",
+     "currency": "string",
+     "amount": "integer",
+     "fuelTankCode": "string",
+     "fueltankType": "string"
+    },
+    "evidence": [
+     "openapi/_original/impact-radius-brand-advocate-reward-v13.yaml#GET /{tenant_alias}/reward",
+     "openapi/_original/impact-radius-brand-advocate-reward-v13.yaml#GET /{tenant_alias}/reward/{id}",
+     "openapi/_original/impact-radius-brand-advocate-reward-v13.yml#GET /{tenant_alias}/reward",
+     "openapi/_original/impact-radius-brand-advocate-reward-v13.yml#GET /{tenant_alias}/reward/{id}"
+    ]
+   },
+   "imprint": {
+    "segments": [
+     "rewards",
+     "offers"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item"
+    ],
+    "properties": {
+     "id": "string",
+     "customer_id": "string",
+     "transaction_event_id": "string",
+     "amount": "integer",
+     "type": "string",
+     "currency": "string",
+     "status": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "metadata": "object",
+     "is_prescreened": "boolean",
+     "title": "string",
+     "description": "string"
+    },
+    "evidence": [
+     "openapi/_original/imprint-openapi.yml#GET /v2/customers/{customer_id}/rewards",
+     "openapi/_original/imprint-openapi.yml#GET /v2/offers",
+     "openapi/_original/imprint-openapi.yml#GET /v2/rewards",
+     "openapi/_original/imprint-openapi.yml#GET /v2/rewards/{reward_id}",
+     "openapi/_original/imprint-openapi.yml#PATCH /v2/rewards/{reward_id}"
+    ]
+   },
+   "incentivio": {
+    "segments": [
+     "offers"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "offerId": "string",
+     "campaignId": "string",
+     "programId": "string",
+     "title": "string",
+     "offerType": "string",
+     "numOffersToDistribute": "integer",
+     "numOffersInInventory": "integer",
+     "externalId": "string",
+     "priority": "integer",
+     "redemptionStartDate": "string",
+     "redemptionEndDate": "string",
+     "distributionStartDate": "string",
+     "distributionEndDate": "string",
+     "distributionMode": "string",
+     "displayInfo": "array",
+     "merchantId": "string",
+     "codeType": "string",
+     "codeFormat": "string",
+     "offerCode": "string",
+     "distributionRuleSet": "string",
+     "redemptionRuleSet": "string",
+     "createdDate": "string",
+     "updatedDate": "string",
+     "isLoyaltyOffer": "boolean",
+     "offerRedemptionExpired": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/incentivio-admin-api-openapi.json#DELETE /clients/{clientid}/merchants/{merchantid}/offers/{offerid}",
+     "openapi/_original/incentivio-admin-api-openapi.json#GET /incentivio-reports/pulse/email/offers",
+     "openapi/_original/incentivio-admin-api-openapi.yml#DELETE /clients/{clientid}/merchants/{merchantid}/offers/{offerid}",
+     "openapi/_original/incentivio-admin-api-openapi.yml#GET /incentivio-reports/pulse/email/offers",
+     "openapi/_original/incentivio-mobile-api-openapi.json#GET /offers/{offerid}",
+     "openapi/_original/incentivio-mobile-api-openapi.yml#GET /offers/{offerid}"
+    ]
+   },
+   "kard": {
+    "segments": [
+     "offers"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "_id": "string",
+     "terms": "string",
+     "redeemableOnce": "boolean",
+     "name": "string",
+     "offerType": "string",
+     "commissionType": "string",
+     "startDate": "string",
+     "expirationDate": "string",
+     "isTargeted": "boolean",
+     "createdDate": "string",
+     "lastModified": "string",
+     "totalCommission": "number",
+     "isLocationSpecific": "boolean",
+     "issuersCommission": "number",
+     "usersCommission": "number",
+     "minTransactionAmount": "integer",
+     "maxTransactionAmount": "integer",
+     "minRewardAmount": "integer",
+     "maxRewardAmount": "integer",
+     "source": "string",
+     "category": "string",
+     "merchant": "object"
+    },
+    "evidence": [
+     "openapi/_original/kard-api-reference-openapi.yaml#GET /v2/issuers/{organizationId}/users/{userId}/offers",
+     "openapi/_original/kard-legacy-openapi.yaml#GET /rewards/merchant/offers"
+    ]
+   },
+   "lucra-sports": {
+    "segments": [
+     "rewards"
+    ],
+    "operations": [
+     "GET collection",
+     "PATCH collection",
+     "PUT collection"
+    ],
+    "properties": {
+     "position": "number",
+     "positionOverride": "object",
+     "value": "string",
+     "netAmount": "string",
+     "feeAmount": "string",
+     "totalAmount": "string",
+     "identifier": "object",
+     "tiers": "array",
+     "endPosition": "number",
+     "userId": "string",
+     "catalogRewardId": "string",
+     "reward": null
+    },
+    "evidence": [
+     "openapi/_original/lucra-sports-forge-openapi.json#GET /api/tournaments/{id}/rewards",
+     "openapi/_original/lucra-sports-forge-openapi.json#PATCH /api/tournaments/rewards",
+     "openapi/_original/lucra-sports-forge-openapi.json#PUT /api/tournaments/{id}/rewards"
+    ]
+   },
+   "nectar-hr": {
+    "segments": [
+     "redemptions"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "status": "string",
+     "links": "object",
+     "gift_card_redemptions": "string",
+     "swag_redemptions": "string",
+     "amazon_redemptions": "object",
+     "user": null
+    },
+    "evidence": [
+     "openapi/_original/nectar-hr-openapi.yml#GET /v1/analytics/financial/redemptions"
+    ]
+   },
+   "olo": {
+    "segments": [
+     "redemptions"
+    ],
+    "operations": [
+     "DELETE item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "type": "string",
+     "discount": "number",
+     "reference": "object",
+     "orderId": "string",
+     "accountId": "string",
+     "source": "string",
+     "handoff": "string",
+     "currency": "string",
+     "placed": "string",
+     "wanted": "string",
+     "storeNumber": "string",
+     "restaurant": "string",
+     "brand": "string",
+     "subtotal": "number",
+     "tax": "number",
+     "tip": "number",
+     "delivery": "number",
+     "customFees": "number",
+     "total": "number",
+     "address": "object",
+     "payments": "array",
+     "basket": "object",
+     "transaction": "object",
+     "couponCodes": "array",
+     "rewardIds": "array"
+    },
+    "evidence": [
+     "openapi/_original/olo-promotions-openapi.yml#DELETE /promotions/redemptions/{redemptionId}",
+     "openapi/_original/olo-promotions-openapi.yml#POST /promotions/redemptions"
+    ]
+   },
+   "paystone": {
+    "segments": [
+     "rewards"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "@context": null,
+     "@id": "string",
+     "@type": "string",
+     "creationDate": "string",
+     "expireOnDate": "string",
+     "rewardValue": [
+      "number",
+      "null"
+     ],
+     "type": [
+      "string",
+      "null"
+     ],
+     "sku": [
+      "string",
+      "null"
+     ],
+     "quantity": [
+      "integer",
+      "null"
+     ],
+     "labelEn": [
+      "string",
+      "null"
+     ],
+     "labelFr": [
+      "string",
+      "null"
+     ],
+     "redeemableItems": "array"
+    },
+    "evidence": [
+     "openapi/_original/paystone-datacandy-openapi.yml#GET /rewards/{id}"
+    ]
+   },
+   "publiq": {
+    "segments": [
+     "rewards",
+     "offers"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "itemsPerPage": "integer",
+     "totalItems": "integer",
+     "member": "array",
+     "facet": "object",
+     "id": "string",
+     "title": "string",
+     "type": "string",
+     "promotionalDescription": "string",
+     "publicationPeriod": "object",
+     "points": "number",
+     "categories": "array",
+     "moreInfoURL": "string",
+     "grantingPeriod": "object",
+     "owningCardSystem": "object",
+     "applicableCardSystems": "array",
+     "allCardSystems": "boolean",
+     "organizers": "array",
+     "status": "string",
+     "maxAvailableUnits": "integer",
+     "unitsTaken": "integer",
+     "practicalInfo": "string",
+     "pictures": "array",
+     "redeemPeriod": "object",
+     "forKids": "boolean",
+     "sport": "boolean",
+     "featured": "boolean",
+     "online": "boolean",
+     "lastChance": "boolean",
+     "redeemConstraint": "object"
+    },
+    "evidence": [
+     "openapi/_original/publiq-uitdatabank-search-openapi.yml#GET /offers",
+     "openapi/_original/publiq-uitdatabank-search-openapi.yml#POST /offers",
+     "openapi/_original/publiq-uitpas-openapi.yml#GET /rewards",
+     "openapi/_original/publiq-uitpas-openapi.yml#GET /rewards/{rewardId}",
+     "openapi/_original/publiq-uitpas-openapi.yml#POST /rewards",
+     "openapi/_original/publiq-uitpas-openapi.yml#PUT /rewards/{rewardId}",
+     "openapi/_original/uitdatabank-search.json#GET /offers",
+     "openapi/_original/uitdatabank-search.json#POST /offers",
+     "openapi/_original/uitpas-uitpas.json#GET /rewards",
+     "openapi/_original/uitpas-uitpas.json#GET /rewards/{rewardId}",
+     "openapi/_original/uitpas-uitpas.json#POST /rewards",
+     "openapi/_original/uitpas-uitpas.json#PUT /rewards/{rewardId}"
+    ]
+   },
+   "punchh": {
+    "segments": [
+     "redemptions",
+     "reward",
+     "offers",
+     "rewards",
+     "redemption"
+    ],
+    "operations": [
+     "DELETE collection",
+     "DELETE item",
+     "GET collection",
+     "PATCH collection",
+     "POST collection"
+    ],
+    "properties": {
+     "client": "string",
+     "access_token": "string",
+     "recipient_email": "string",
+     "recipient_identifier": "string",
+     "reward_to_transfer": "number",
+     "password": "string",
+     "pinned_message": "string",
+     "rewards": "array",
+     "notifications": "array",
+     "coupons": "array",
+     "redemption_status": "string",
+     "created_at": "string",
+     "redeemable_id": "integer",
+     "redeemable_name": "string",
+     "redeemed_value": "string",
+     "redemption_image_url": "string",
+     "redemption_message": "string",
+     "redeemable_description": "string",
+     "updated_at": "string",
+     "redemption_id": "integer",
+     "redemption_tracking_code": "string",
+     "expiring_at": "string",
+     "location_id": "integer",
+     "campaign_name": "string",
+     "reward_id": "integer",
+     "latitude": "string",
+     "longitude": "string",
+     "gps_accuracy": "integer",
+     "internal_tracking_code": "integer",
+     "expiry_hours": "integer",
+     "authentication_token": "string",
+     "locale": "string",
+     "redeemed_points": "number",
+     "store_number": "string",
+     "reason": "string",
+     "redemption_code": "string",
+     "business_id": "integer",
+     "end_date": "string",
+     "end_date_tz": "string",
+     "gaming_level_id": "string",
+     "gifted_for_type": "string",
+     "gift_reason": "string",
+     "id": "integer",
+     "location_ids": "array",
+     "read_at": "string",
+     "reward_properties": null,
+     "start_date": "string",
+     "start_date_tz": "string",
+     "external_store_numbers": "array",
+     "type": "string",
+     "redeemables": "array",
+     "user": "object",
+     "transaction_no": "string",
+     "discounts_applied": "object",
+     "category": "string",
+     "qualified_menu_items": "array",
+     "discount_distribution_items": "array",
+     "redemption_amount": "number",
+     "status": "string",
+     "max_applicable_quantity": "string",
+     "qualifying_conditions": "object",
+     "discount_type": "string",
+     "subscription_id": "string",
+     "cc_last4": "integer",
+     "employee_id": "string",
+     "employee_name": "string",
+     "menu_items": "array",
+     "receipt_amount": "number",
+     "subtotal_amount": "number",
+     "receipt_datetime": "string",
+     "external_uid": "string",
+     "punchh_key": "string",
+     "email": "string",
+     "single_scan_code": "string",
+     "channel": "string",
+     "card_number": "string",
+     "phone": "string"
+    },
+    "evidence": [
+     "openapi/_original/punchh-mobile-api-openapi.yml#GET /api2/mobile/offers",
+     "openapi/_original/punchh-mobile-api-openapi.yml#POST /api2/mobile/loyalty_transfers/reward",
+     "openapi/_original/punchh-mobile-redemptions-legacy-openapi.yml#DELETE /api2/mobile/redemptions/{redemption_id}",
+     "openapi/_original/punchh-mobile-redemptions-legacy-openapi.yml#POST /api2/mobile/redemptions/reward",
+     "openapi/_original/punchh-online-ordering-redemptions-legacy-openapi.yml#DELETE /api/auth/redemptions",
+     "openapi/_original/punchh-online-ordering-redemptions-legacy-openapi.yml#POST /api/auth/redemptions",
+     "openapi/_original/punchh-online-ordering-sso-api-openapi.yml#GET /api/auth/offers",
+     "openapi/_original/punchh-online-ordering-sso-api-openapi.yml#GET /api/auth/rewards",
+     "openapi/_original/punchh-platform-functions-api-openapi.yml#GET /api2/dashboard/redemptions",
+     "openapi/_original/punchh-platform-functions-api-openapi.yml#GET /api2/dashboard/users/redemption",
+     "openapi/_original/punchh-platform-functions-api-openapi.yml#PATCH /api2/dashboard/redemptions",
+     "openapi/_original/punchh-pos-redemptions-legacy-openapi.yml#DELETE /api/pos/redemptions"
+    ]
+   },
+   "shell": {
+    "segments": [
+     "offers"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "offers": "array",
+     "totalCount": "integer"
+    },
+    "evidence": [
+     "openapi/_original/shell-loyalty-openapi.yml#GET /accounts/{accountId}/offers"
+    ]
+   },
+   "splio": {
+    "segments": [
+     "rewards"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item",
+     "PATCH item",
+     "POST collection"
+    ],
+    "properties": {
+     "auto_generated": "boolean",
+     "custom_fields": "array",
+     "description": "string",
+     "external_id": "string",
+     "forced_validity": "boolean",
+     "forced_validity_end": "string",
+     "forced_validity_start": "string",
+     "holding_days": "integer",
+     "image_url": "string",
+     "limited": "boolean",
+     "max_attribution_count": "string",
+     "monetary": "boolean",
+     "monetary_type": "string",
+     "monetary_value": "number",
+     "name": "string",
+     "nqp_value": "integer",
+     "rich_description": "string",
+     "validity_interval_count": "integer",
+     "validity_interval_type": "string",
+     "forced_valitidy_end": "string",
+     "valitidy_interval_count": "integer"
+    },
+    "evidence": [
+     "openapi/_original/splio-customer-platform-openapi.json#GET /data/fields/rewards",
+     "openapi/_original/splio-customer-platform-openapi.json#GET /loyalty/v1/rewards/{id}",
+     "openapi/_original/splio-customer-platform-openapi.json#GET /loyalty/v2/contacts/{id}/rewards",
+     "openapi/_original/splio-customer-platform-openapi.json#GET /loyalty/v2/rewards",
+     "openapi/_original/splio-customer-platform-openapi.json#PATCH /loyalty/v1/rewards/{id}",
+     "openapi/_original/splio-customer-platform-openapi.json#POST /loyalty/v1/rewards",
+     "openapi/_original/splio-doc-swagger2.json#GET /data/fields/rewards",
+     "openapi/_original/splio-doc-swagger2.json#GET /loyalty/v1/rewards/{id}",
+     "openapi/_original/splio-doc-swagger2.json#GET /loyalty/v2/contacts/{id}/rewards",
+     "openapi/_original/splio-doc-swagger2.json#GET /loyalty/v2/rewards",
+     "openapi/_original/splio-doc-swagger2.json#PATCH /loyalty/v1/rewards/{id}",
+     "openapi/_original/splio-doc-swagger2.json#POST /loyalty/v1/rewards"
+    ]
+   },
+   "square": {
+    "segments": [
+     "rewards"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {
+     "id": "string",
+     "status": "string",
+     "loyalty_account_id": "string",
+     "reward_tier_id": "string",
+     "points": "integer",
+     "order_id": "string",
+     "created_at": "string",
+     "updated_at": "string",
+     "redeemed_at": "string",
+     "reward": "object",
+     "idempotency_key": "string",
+     "errors": "array"
+    },
+    "evidence": [
+     "openapi/_original/square-openapi.yml#DELETE /v2/loyalty/rewards/{reward_id}",
+     "openapi/_original/square-openapi.yml#GET /v2/loyalty/rewards/{reward_id}",
+     "openapi/_original/square-openapi.yml#POST /v2/loyalty/rewards"
+    ]
+   },
+   "stamped": {
+    "segments": [
+     "rewards"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "page": "number",
+     "limit": "number",
+     "morePages": "boolean",
+     "subset": "boolean",
+     "rewards": "array"
+    },
+    "evidence": [
+     "openapi/_original/stamped-loyalty-operations-openapi.json#GET /api/v3/loyalty/shops/{shopId}/rewards"
+    ]
+   },
+   "talkable": {
+    "segments": [
+     "rewards",
+     "offers"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/talkable-v2-openapi-original.yml#GET /api/v2/offers/{short_url_code}",
+     "openapi/_original/talkable-v2-openapi-original.yml#GET /api/v2/people/{person_slug}/rewards",
+     "openapi/_original/talkable-v2-openapi-original.yml#GET /api/v2/rewards"
+    ]
+   },
+   "thanx": {
+    "segments": [
+     "rewards"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "rewards": "array",
+     "pagination": "object",
+     "id": "string",
+     "olo_uid": "string",
+     "user_id": "string",
+     "merchant_id": "string",
+     "campaign_id": "string",
+     "state": "string",
+     "earn": "object",
+     "redeem": "object",
+     "coupon_code": "object",
+     "fine_print": "string",
+     "instructions": "string",
+     "available_at": "string",
+     "activated_at": "string",
+     "retire_at": "string",
+     "used_at": "string",
+     "uses_dynamic_coupon_codes": "boolean"
+    },
+    "evidence": [
+     "openapi/_original/thanx-consumer-api-openapi.yml#GET /rewards",
+     "openapi/_original/thanx-consumer-api-openapi.yml#GET /rewards/{id}"
+    ]
+   },
+   "tremendous": {
+    "segments": [
+     "rewards"
+    ],
+    "operations": [
+     "GET item"
+    ],
+    "properties": {
+     "id": "string",
+     "order_id": "string",
+     "status": "string",
+     "value": "object",
+     "recipient": "object",
+     "delivery": "object",
+     "campaign_id": "string",
+     "created_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/tremendous-api-openapi.yml#GET /rewards/{id}"
+    ]
+   },
+   "united-airlines": {
+    "segments": [
+     "offers"
+    ],
+    "operations": [
+     "GET item",
+     "POST collection"
+    ],
+    "properties": {},
+    "evidence": [
+     "openapi/_original/united-airlines-ndc-openapi.yml#GET /shopping/offers/{offerId}",
+     "openapi/_original/united-airlines-ndc-openapi.yml#POST /shopping/offers"
+    ]
+   },
+   "yotpo": {
+    "segments": [
+     "redemptions"
+    ],
+    "operations": [
+     "POST collection"
+    ],
+    "properties": {
+     "coupon_code": "string",
+     "points_deducted": "integer",
+     "customer_email": "string",
+     "redemption_option_id": "integer"
+    },
+    "evidence": [
+     "openapi/_original/yotpo-openapi.yml#POST /redemptions"
+    ]
+   }
+  },
+  "referral": {
+   "ansa": {
+    "segments": [
+     "referrals"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "receivedReferral": "object",
+     "sentReferrals": "array",
+     "created": "string",
+     "id": "string",
+     "recipientCreditAmount": "integer",
+     "recipientId": "string",
+     "redemptionEvent": "string",
+     "redemptionThresholdAmount": "integer",
+     "senderCreditAmount": "integer",
+     "senderId": "string",
+     "status": "string",
+     "referralCode": "string"
+    },
+    "evidence": [
+     "openapi/_original/ansa-openapi-original.yml#GET /v1/customers/{customerId}/referrals",
+     "openapi/_original/ansa-openapi-original.yml#POST /v1/customers/{customerId}/referrals"
+    ]
+   },
+   "extole": {
+    "segments": [
+     "advocates"
+    ],
+    "operations": [
+     "GET collection"
+    ],
+    "properties": {
+     "container": "string",
+     "person": "object",
+     "reason": "string",
+     "shareable_id": "string",
+     "updated_at": "string"
+    },
+    "evidence": [
+     "openapi/_original/extole-integration-consumer-to-extole-openapi.json#GET /api/v4/me/advocates"
+    ]
+   },
+   "gameball": {
+    "segments": [
+     "referrals",
+     "referral"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "date": "string",
+     "name": null,
+     "value": null,
+     "value2": null,
+     "extra": null,
+     "response": "boolean",
+     "success": "boolean",
+     "errorMsg": "string",
+     "errorCode": "integer",
+     "liveMode": "boolean",
+     "isDeleted": "boolean",
+     "creationDate": "string",
+     "lastUpdate": "string",
+     "playerCode": "string",
+     "playerUniqueId": "string",
+     "email": "string",
+     "mobile": "string",
+     "newPlayerUniqueID": "string",
+     "preferredLanguage": "string",
+     "playerAttributes": "object",
+     "referredFriends": "array",
+     "count": "integer",
+     "total": "integer",
+     "totalPending": "integer",
+     "totalActive": "integer",
+     "isReferralOn": "boolean",
+     "referralStatistics": "object",
+     "challenges": "array",
+     "isGBEnabled": "boolean",
+     "isFeatureEnabled": "boolean",
+     "isCustomerActive": "boolean",
+     "content": "object",
+     "isReferralActive": "boolean",
+     "customerReferralLink": "string",
+     "referralRule": "object",
+     "referralRewardLimitStatus": "object"
+    },
+    "evidence": [
+     "openapi/_original/gameball-openapi.json#GET /api/v1/Analytics/Referrals",
+     "openapi/_original/gameball-openapi.json#GET /api/v1/Bots/players/{identifier}/referrals",
+     "openapi/_original/gameball-openapi.json#GET /api/v1/Players/{id}/referrals",
+     "openapi/_original/gameball-openapi.json#GET /api/v1/Programs/referrals",
+     "openapi/_original/gameball-openapi.json#GET /api/v1/Shopify/app-blocks/thank-you/referral",
+     "openapi/_original/gameball-openapi.json#POST /api/v1/Integrations/Referral"
+    ]
+   },
+   "impact": {
+    "segments": [
+     "referrals"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "count": "integer",
+     "totalCount": "integer",
+     "referrals": "array",
+     "id": "string",
+     "referredUser": "object",
+     "referrerUser": "object",
+     "referredReward": "object",
+     "referrerReward": null,
+     "referralCodeUsed": "string",
+     "shareLinkUsed": "string",
+     "moderationStatus": "string",
+     "referredModerationStatus": "string",
+     "referrerModerationStatus": "string",
+     "fraudSignals": null,
+     "dateReferralStarted": "integer",
+     "dateReferralPaid": "integer",
+     "dateReferralEnded": "integer",
+     "dateModerated": "integer",
+     "dateConverted": "integer",
+     "dateModified": "integer",
+     "dateUserModified": "integer",
+     "programId": "string"
+    },
+    "evidence": [
+     "openapi/_original/impact-brand-advocate-referral-v13-openapi.yml#GET /{tenant_alias}/open/referrals",
+     "openapi/_original/impact-brand-advocate-referral-v13-openapi.yml#GET /{tenant_alias}/referrals",
+     "openapi/_original/impact-brand-advocate-referral-v13-openapi.yml#GET /{tenant_alias}/referrals/{referralId}",
+     "openapi/_original/impact-brand-advocate-referral-v13.yaml#GET /{tenant_alias}/open/referrals",
+     "openapi/_original/impact-brand-advocate-referral-v13.yaml#GET /{tenant_alias}/referrals",
+     "openapi/_original/impact-brand-advocate-referral-v13.yaml#GET /{tenant_alias}/referrals/{referralId}"
+    ]
+   },
+   "impact-radius": {
+    "segments": [
+     "referrals"
+    ],
+    "operations": [
+     "GET collection",
+     "GET item"
+    ],
+    "properties": {
+     "count": "integer",
+     "totalCount": "integer",
+     "referrals": "array",
+     "id": "string",
+     "referredUser": "object",
+     "referrerUser": "object",
+     "referredReward": "object",
+     "referrerReward": null,
+     "referralCodeUsed": "string",
+     "shareLinkUsed": "string",
+     "moderationStatus": "string",
+     "referredModerationStatus": "string",
+     "referrerModerationStatus": "string",
+     "fraudSignals": null,
+     "dateReferralStarted": "integer",
+     "dateReferralPaid": "integer",
+     "dateReferralEnded": "integer",
+     "dateModerated": "integer",
+     "dateConverted": "integer",
+     "dateModified": "integer",
+     "dateUserModified": "integer",
+     "programId": "string"
+    },
+    "evidence": [
+     "openapi/_original/impact-radius-brand-advocate-referral-v13.yaml#GET /{tenant_alias}/open/referrals",
+     "openapi/_original/impact-radius-brand-advocate-referral-v13.yaml#GET /{tenant_alias}/referrals",
+     "openapi/_original/impact-radius-brand-advocate-referral-v13.yaml#GET /{tenant_alias}/referrals/{referralId}",
+     "openapi/_original/impact-radius-brand-advocate-referral-v13.yml#GET /{tenant_alias}/open/referrals",
+     "openapi/_original/impact-radius-brand-advocate-referral-v13.yml#GET /{tenant_alias}/referrals",
+     "openapi/_original/impact-radius-brand-advocate-referral-v13.yml#GET /{tenant_alias}/referrals/{referralId}"
+    ]
+   },
+   "punchh": {
+    "segments": [
+     "referrals"
+    ],
+    "operations": [
+     "GET collection",
+     "POST collection"
+    ],
+    "properties": {
+     "avatar_remote_url": "string",
+     "email": "string",
+     "fb_uid": "string",
+     "first_name": "string",
+     "last_name": "string",
+     "user_id": "string",
+     "client": "string",
+     "friend_to_refer": "string"
+    },
+    "evidence": [
+     "openapi/_original/punchh-mobile-api-openapi.yml#GET /api2/mobile/{checkin_id}/referrals",
+     "openapi/_original/punchh-mobile-api-openapi.yml#POST /api2/mobile/{checkin_id}/referrals"
+    ]
+   },
+   "talkable": {
+    "segments": [
+     "referral"
+    ],
+    "operations": [
+     "PUT collection"
+    ],
+    "properties": {
+     "status": "string"
+    },
+    "evidence": [
+     "openapi/_original/talkable-v2-openapi-original.yml#PUT /api/v2/origins/{origin_slug}/referral"
+    ]
+   },
+   "talon-one": {
+    "segments": [
+     "referrals",
+     "referral"
+    ],
+    "operations": [
+     "DELETE item",
+     "GET collection",
+     "POST collection",
+     "PUT item"
+    ],
+    "properties": {
+     "id": "integer",
+     "created": "string",
+     "startDate": "string",
+     "expiryDate": "string",
+     "usageLimit": "integer",
+     "campaignId": "integer",
+     "advocateProfileIntegrationId": "string",
+     "friendProfileIntegrationId": "string",
+     "attributes": "object",
+     "importId": "integer",
+     "code": "string",
+     "usageCounter": "integer",
+     "batchId": "string",
+     "dryRun": "boolean",
+     "deploymentUrl": "string"
+    },
+    "evidence": [
+     "openapi/_original/talon-one-integration-api-openapi.yml#POST /v1/referrals",
+     "openapi/_original/talon-one-management-api-openapi.yml#DELETE /v1/applications/{applicationId}/campaigns/{campaignId}/referrals/{referralId}",
+     "openapi/_original/talon-one-management-api-openapi.yml#PUT /v1/applications/{applicationId}/campaigns/{campaignId}/referrals/{referralId}",
+     "openapi/_original/talon-one-third-party-api-openapi.yml#GET /customer_engagement/referral",
+     "openapi/_original/talon-one-third-party-api-openapi.yml#GET /iterable/referral",
+     "openapi/_original/talon-one-third-party-api-openapi.yml#POST /braze/referral"
+    ]
+   }
+  }
+ },
+ "naming": {
+  "path_segment": {
+   "lower": [
+    "accrue-savings",
+    "alliance-data-systems",
+    "ansa",
+    "antavo",
+    "bilt",
+    "blackbird",
+    "bonusly",
+    "boost",
+    "brevo",
+    "bybe",
+    "caseys-general-stores",
+    "cello",
+    "centrapay",
+    "chase",
+    "cloudkitchens",
+    "crm-bonus",
+    "dotdigital",
+    "epsilon",
+    "extole",
+    "fetch-rewards",
+    "gameball",
+    "giftbit",
+    "goody",
+    "grab",
+    "guusto",
+    "hang",
+    "harbor",
+    "hilton",
+    "hopper-com",
+    "ibotta",
+    "impact",
+    "impact-radius",
+    "imprint",
+    "incentivio",
+    "influitive",
+    "kangaroo-rewards",
+    "kard",
+    "lightspeed",
+    "lucra-sports",
+    "lunchbox",
+    "makeup-land",
+    "nectar-hr",
+    "nift",
+    "olo",
+    "open-loyalty",
+    "paystone",
+    "playable",
+    "pointcheckout",
+    "publiq",
+    "punchh",
+    "reachdesk",
+    "regal-entertainment-group",
+    "reloadly",
+    "runa",
+    "shell",
+    "shopback",
+    "smartrr",
+    "smile-io",
+    "snackmagic",
+    "splio",
+    "square",
+    "stamped",
+    "starbucks",
+    "starwood-hotels-and-resorts",
+    "switchfly",
+    "talkable",
+    "talon-one",
+    "tango",
+    "tango-card",
+    "td-bank",
+    "thanx",
+    "tillo",
+    "tremendous",
+    "united-airlines",
+    "xoxoday",
+    "yotpo"
+   ],
+   "kebab-case": [
+    "accrue-savings",
+    "alliance-data-systems",
+    "ansa",
+    "antavo",
+    "bilt",
+    "boost",
+    "brevo",
+    "caseys-general-stores",
+    "cello",
+    "centrapay",
+    "chase",
+    "cloudkitchens",
+    "dotdigital",
+    "epsilon",
+    "extole",
+    "gameball",
+    "grab",
+    "guusto",
+    "hang",
+    "impact",
+    "impact-radius",
+    "incentivio",
+    "kard",
+    "lightspeed",
+    "lucra-sports",
+    "lunchbox",
+    "makeup-land",
+    "nectar-hr",
+    "open-loyalty",
+    "paystone",
+    "playable",
+    "publiq",
+    "reloadly",
+    "shopback",
+    "smartrr",
+    "splio",
+    "square",
+    "stamped",
+    "switchfly",
+    "talon-one",
+    "td-bank",
+    "tillo"
+   ],
+   "snake_case": [
+    "ansa",
+    "blackbird",
+    "bonusly",
+    "bybe",
+    "crm-bonus",
+    "extole",
+    "giftbit",
+    "goody",
+    "hang",
+    "hopper-com",
+    "imprint",
+    "lightspeed",
+    "lunchbox",
+    "open-loyalty",
+    "punchh",
+    "reachdesk",
+    "smile-io",
+    "snackmagic",
+    "splio",
+    "talkable",
+    "talon-one",
+    "thanx",
+    "tremendous",
+    "yotpo"
+   ],
+   "camelCase": [
+    "brevo",
+    "dotdigital",
+    "extole",
+    "gameball",
+    "impact",
+    "impact-radius",
+    "incentivio",
+    "kangaroo-rewards",
+    "kard",
+    "lightspeed",
+    "open-loyalty",
+    "smartrr",
+    "tango",
+    "tango-card",
+    "xoxoday"
+   ],
+   "other": [
+    "accrue-savings",
+    "antavo",
+    "bonusly",
+    "boost",
+    "extole",
+    "grab",
+    "incentivio",
+    "lightspeed",
+    "nift",
+    "publiq",
+    "reachdesk",
+    "shopback"
+   ],
+   "PascalCase": [
+    "caseys-general-stores",
+    "gameball",
+    "huuray",
+    "impact",
+    "impact-radius",
+    "lightspeed",
+    "talon-one"
+   ]
+  },
+  "query_param": {
+   "lower": [
+    "accrue-savings",
+    "ansa",
+    "antavo",
+    "blackbird",
+    "bonusly",
+    "boost",
+    "brevo",
+    "bybe",
+    "caseys-general-stores",
+    "cloudkitchens",
+    "dotdigital",
+    "epsilon",
+    "extole",
+    "gameball",
+    "giftbit",
+    "goody",
+    "grab",
+    "guusto",
+    "hang",
+    "harbor",
+    "impact",
+    "impact-radius",
+    "imprint",
+    "incentivio",
+    "kard",
+    "lightspeed",
+    "lucra-sports",
+    "lunchbox",
+    "makeup-land",
+    "nectar-hr",
+    "open-loyalty",
+    "paystone",
+    "playable",
+    "pointcheckout",
+    "publiq",
+    "punchh",
+    "reachdesk",
+    "regal-entertainment-group",
+    "reloadly",
+    "runa",
+    "shell",
+    "smile-io",
+    "snackmagic",
+    "splio",
+    "square",
+    "stamped",
+    "starbucks",
+    "starwood-hotels-and-resorts",
+    "talkable",
+    "talon-one",
+    "tango",
+    "tango-card",
+    "td-bank",
+    "thanx",
+    "tillo",
+    "tremendous",
+    "united-airlines",
+    "yotpo"
+   ],
+   "camelCase": [
+    "accrue-savings",
+    "ansa",
+    "boost",
+    "brevo",
+    "caseys-general-stores",
+    "centrapay",
+    "chase",
+    "cloudkitchens",
+    "dotdigital",
+    "epsilon",
+    "gameball",
+    "impact",
+    "impact-radius",
+    "incentivio",
+    "kard",
+    "lightspeed",
+    "lucra-sports",
+    "nectar-hr",
+    "olo",
+    "open-loyalty",
+    "paystone",
+    "pointcheckout",
+    "publiq",
+    "regal-entertainment-group",
+    "reloadly",
+    "shell",
+    "smartrr",
+    "stamped",
+    "starwood-hotels-and-resorts",
+    "talon-one",
+    "tango",
+    "tango-card",
+    "td-bank",
+    "united-airlines"
+   ],
+   "snake_case": [
+    "antavo",
+    "blackbird",
+    "bonusly",
+    "brevo",
+    "bybe",
+    "cloudkitchens",
+    "extole",
+    "gameball",
+    "giftbit",
+    "goody",
+    "grab",
+    "hang",
+    "impact",
+    "impact-radius",
+    "imprint",
+    "lightspeed",
+    "lunchbox",
+    "makeup-land",
+    "nectar-hr",
+    "playable",
+    "publiq",
+    "punchh",
+    "reachdesk",
+    "runa",
+    "smile-io",
+    "snackmagic",
+    "splio",
+    "square",
+    "talkable",
+    "thanx",
+    "tillo",
+    "tremendous",
+    "yotpo"
+   ],
+   "other": [
+    "accrue-savings",
+    "antavo",
+    "brevo",
+    "dotdigital",
+    "extole",
+    "goody",
+    "impact",
+    "impact-radius",
+    "kard",
+    "lightspeed",
+    "paystone",
+    "pointcheckout",
+    "publiq",
+    "reachdesk",
+    "talkable",
+    "thanx"
+   ],
+   "PascalCase": [
+    "antavo",
+    "caseys-general-stores",
+    "gameball",
+    "huuray",
+    "impact",
+    "impact-radius"
+   ],
+   "kebab-case": [
+    "dotdigital",
+    "incentivio",
+    "nectar-hr",
+    "playable"
+   ]
+  },
+  "path_param": {
+   "camelCase": [
+    "accrue-savings",
+    "alliance-data-systems",
+    "ansa",
+    "antavo",
+    "bilt",
+    "brevo",
+    "caseys-general-stores",
+    "cello",
+    "centrapay",
+    "chase",
+    "cloudkitchens",
+    "dotdigital",
+    "epsilon",
+    "extole",
+    "gameball",
+    "grab",
+    "guusto",
+    "harbor",
+    "impact",
+    "impact-radius",
+    "incentivio",
+    "kard",
+    "lightspeed",
+    "lucra-sports",
+    "makeup-land",
+    "nectar-hr",
+    "olo",
+    "open-loyalty",
+    "paystone",
+    "playable",
+    "pointcheckout",
+    "publiq",
+    "regal-entertainment-group",
+    "reloadly",
+    "runa",
+    "shell",
+    "shopback",
+    "smartrr",
+    "stamped",
+    "starbucks",
+    "starwood-hotels-and-resorts",
+    "talon-one",
+    "tango",
+    "tango-card",
+    "td-bank",
+    "united-airlines"
+   ],
+   "lower": [
+    "accrue-savings",
+    "alliance-data-systems",
+    "antavo",
+    "blackbird",
+    "bonusly",
+    "boost",
+    "brevo",
+    "bybe",
+    "caseys-general-stores",
+    "cello",
+    "cloudkitchens",
+    "dotdigital",
+    "epsilon",
+    "extole",
+    "fetch-rewards",
+    "gameball",
+    "giftbit",
+    "goody",
+    "guusto",
+    "hang",
+    "hopper-com",
+    "impact",
+    "impact-radius",
+    "imprint",
+    "incentivio",
+    "kard",
+    "lightspeed",
+    "lucra-sports",
+    "makeup-land",
+    "open-loyalty",
+    "paystone",
+    "playable",
+    "publiq",
+    "punchh",
+    "reachdesk",
+    "reloadly",
+    "shopback",
+    "smartrr",
+    "smile-io",
+    "splio",
+    "square",
+    "talkable",
+    "tango",
+    "tango-card",
+    "thanx",
+    "tremendous"
+   ],
+   "snake_case": [
+    "antavo",
+    "brevo",
+    "bybe",
+    "extole",
+    "gameball",
+    "giftbit",
+    "hang",
+    "impact",
+    "impact-radius",
+    "imprint",
+    "lightspeed",
+    "lunchbox",
+    "punchh",
+    "snackmagic",
+    "splio",
+    "square",
+    "talkable",
+    "tillo",
+    "yotpo"
+   ],
+   "other": [
+    "extole",
+    "impact",
+    "impact-radius"
+   ],
+   "PascalCase": [
+    "impact",
+    "impact-radius",
+    "punchh"
+   ],
+   "kebab-case": [
+    "lightspeed"
+   ]
+  },
+  "property": {
+   "lower": [
+    "accrue-savings",
+    "ansa",
+    "antavo",
+    "bonusly",
+    "cello",
+    "dotdigital",
+    "extole",
+    "gameball",
+    "hang",
+    "harbor",
+    "impact",
+    "impact-radius",
+    "imprint",
+    "incentivio",
+    "kard",
+    "lucra-sports",
+    "nectar-hr",
+    "olo",
+    "paystone",
+    "publiq",
+    "punchh",
+    "regal-entertainment-group",
+    "shell",
+    "splio",
+    "square",
+    "stamped",
+    "starbucks",
+    "talkable",
+    "talon-one",
+    "thanx",
+    "tremendous"
+   ],
+   "camelCase": [
+    "ansa",
+    "cello",
+    "gameball",
+    "harbor",
+    "impact",
+    "impact-radius",
+    "incentivio",
+    "kard",
+    "lucra-sports",
+    "olo",
+    "paystone",
+    "publiq",
+    "regal-entertainment-group",
+    "shell",
+    "stamped",
+    "starbucks",
+    "talon-one"
+   ],
+   "snake_case": [
+    "antavo",
+    "bonusly",
+    "extole",
+    "hang",
+    "imprint",
+    "nectar-hr",
+    "punchh",
+    "splio",
+    "square",
+    "talkable",
+    "thanx",
+    "tremendous",
+    "yotpo"
+   ],
+   "other": [
+    "antavo",
+    "kard",
+    "paystone"
+   ]
+  },
+  "pagination_param": {
+   "page": [
+    "antavo",
+    "blackbird",
+    "boost",
+    "brevo",
+    "bybe",
+    "gameball",
+    "goody",
+    "guusto",
+    "hang",
+    "harbor",
+    "impact",
+    "impact-radius",
+    "incentivio",
+    "kard",
+    "lightspeed",
+    "lunchbox",
+    "makeup-land",
+    "nectar-hr",
+    "open-loyalty",
+    "paystone",
+    "playable",
+    "pointcheckout",
+    "publiq",
+    "punchh",
+    "reachdesk",
+    "reloadly",
+    "runa",
+    "shell",
+    "smile-io",
+    "snackmagic",
+    "stamped",
+    "talkable",
+    "tango-card",
+    "td-bank",
+    "thanx",
+    "yotpo"
+   ],
+   "limit": [
+    "ansa",
+    "antavo",
+    "bonusly",
+    "brevo",
+    "bybe",
+    "caseys-general-stores",
+    "cloudkitchens",
+    "dotdigital",
+    "epsilon",
+    "extole",
+    "gameball",
+    "giftbit",
+    "hang",
+    "harbor",
+    "impact",
+    "impact-radius",
+    "imprint",
+    "kard",
+    "lightspeed",
+    "lucra-sports",
+    "lunchbox",
+    "makeup-land",
+    "nectar-hr",
+    "publiq",
+    "regal-entertainment-group",
+    "smile-io",
+    "splio",
+    "square",
+    "stamped",
+    "starbucks",
+    "td-bank",
+    "tremendous"
+   ],
+   "offset": [
+    "antavo",
+    "brevo",
+    "caseys-general-stores",
+    "extole",
+    "giftbit",
+    "hang",
+    "impact",
+    "impact-radius",
+    "lightspeed",
+    "lucra-sports",
+    "regal-entertainment-group",
+    "starbucks",
+    "tango",
+    "tremendous"
+   ],
+   "page_size": [
+    "blackbird",
+    "boost",
+    "epsilon",
+    "gameball",
+    "impact",
+    "impact-radius",
+    "kard",
+    "lightspeed",
+    "shell",
+    "smartrr",
+    "smile-io",
+    "talon-one"
+   ],
+   "per_page": [
+    "goody",
+    "hang",
+    "open-loyalty",
+    "playable",
+    "reachdesk",
+    "runa",
+    "snackmagic",
+    "splio",
+    "talkable",
+    "thanx"
+   ],
+   "cursor": [
+    "ansa",
+    "lightspeed",
+    "nectar-hr",
+    "smile-io",
+    "square",
+    "talon-one"
+   ],
+   "size": [
+    "guusto",
+    "lightspeed",
+    "pointcheckout",
+    "publiq",
+    "reloadly",
+    "snackmagic"
+   ],
+   "skip": [
+    "bonusly",
+    "dotdigital",
+    "epsilon",
+    "talon-one"
+   ],
+   "count": [
+    "gameball",
+    "incentivio",
+    "square",
+    "yotpo"
+   ],
+   "after": [
+    "goody",
+    "lightspeed",
+    "splio"
+   ],
+   "before": [
+    "goody",
+    "lightspeed",
+    "splio"
+   ],
+   "page_token": [
+    "epsilon"
+   ],
+   "starting_after": [
+    "imprint"
+   ],
+   "start": [
+    "publiq"
+   ]
+  }
+ }
+}

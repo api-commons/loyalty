@@ -1,0 +1,251 @@
+openapi: 3.1.0
+info:
+  title: Loyalty (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Loyalty interface, distilled from the harvested OpenAPI of 77 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /members:
+    get:
+      operationId: listMembers
+      summary: List members
+      tags:
+      - Members
+      x-commons-tier: core
+      x-commons-share: 0.714
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/Member'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createMember
+      summary: Create a member
+      tags:
+      - Members
+      x-commons-tier: extended
+      x-commons-share: 0.429
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /members/{member_id}:
+    parameters:
+    - $ref: '#/components/parameters/member_id'
+    get:
+      operationId: getMember
+      summary: Get a member
+      tags:
+      - Members
+      x-commons-tier: core
+      x-commons-share: 0.5
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateMember
+      summary: Update a member
+      tags:
+      - Members
+      x-commons-tier: extended
+      x-commons-share: 0.214
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /rewards:
+    get:
+      operationId: listRewards
+      summary: List rewards
+      tags:
+      - Rewards
+      x-commons-tier: core
+      x-commons-share: 0.727
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/Reward'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createReward
+      summary: Create a reward
+      tags:
+      - Rewards
+      x-commons-tier: core
+      x-commons-share: 0.636
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /rewards/{reward_id}:
+    parameters:
+    - $ref: '#/components/parameters/reward_id'
+    get:
+      operationId: getReward
+      summary: Get a reward
+      tags:
+      - Rewards
+      x-commons-tier: core
+      x-commons-share: 0.727
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    delete:
+      operationId: deleteReward
+      summary: Delete a reward
+      tags:
+      - Rewards
+      x-commons-tier: extended
+      x-commons-share: 0.273
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateReward
+      summary: Update a reward
+      tags:
+      - Rewards
+      x-commons-tier: extended
+      x-commons-share: 0.273
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /referrals:
+    get:
+      operationId: listReferrals
+      summary: List referrals
+      tags:
+      - Referrals
+      x-commons-tier: core
+      x-commons-share: 0.857
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Referral'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createReferral
+      summary: Create a referral
+      tags:
+      - Referrals
+      x-commons-tier: core
+      x-commons-share: 0.571
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+components:
+  schemas:
+    Member:
+      $ref: ./schema/member.json
+    Reward:
+      $ref: ./schema/reward.json
+    Referral:
+      $ref: ./schema/referral.json
+  parameters:
+    member_id:
+      name: member_id
+      in: path
+      required: true
+      schema:
+        type: string
+    reward_id:
+      name: reward_id
+      in: path
+      required: true
+      schema:
+        type: string
+    referral_id:
+      name: referral_id
+      in: path
+      required: true
+      schema:
+        type: string

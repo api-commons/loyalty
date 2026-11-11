@@ -1,0 +1,41 @@
+provider: extole
+apis_io: https://apis.io/providers/extole/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/extole-management-openapi.json#GET /v1/audiences/{audience_id}/members
+  reward:
+    path_segment:
+    - rewards
+    properties:
+      created_at:
+      - created_at
+      - created_date
+      id:
+      - reward_id
+      - id
+      status: state
+      name: name
+      updated_at: updated_date
+      email: email
+      member_id: person_id
+    core_coverage: 0.714
+    evidence:
+    - openapi/_original/extole-integration-server-to-extole-openapi.json#GET /v2/rewards
+    - openapi/_original/extole-integration-server-to-extole-openapi.json#GET /v2/rewards/{reward_id}
+    - openapi/_original/extole-integration-server-to-extole-openapi.json#GET /v5/persons/{person_id}/rewards
+    - openapi/_original/extole-integration-server-to-extole-openapi.json#GET /v5/persons/{person_id}/rewards/{reward_id}
+    - openapi/_original/extole-integration-server-to-extole-openapi.json#PUT /v2/rewards/{reward_id}
+  referral:
+    path_segment:
+    - advocates
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/extole-integration-consumer-to-extole-openapi.json#GET /api/v4/me/advocates

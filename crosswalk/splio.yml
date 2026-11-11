@@ -1,0 +1,33 @@
+provider: splio
+apis_io: https://apis.io/providers/splio/
+context: loyalty
+generated: '2026-11-10'
+concepts:
+  member:
+    path_segment:
+    - members
+    properties:
+      member_id: contact_id
+      metadata: custom_fields
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/splio-customer-platform-openapi.json#GET /data/fields/members
+    - openapi/_original/splio-customer-platform-openapi.json#GET /loyalty/members/{id}
+    - openapi/_original/splio-customer-platform-openapi.json#GET /loyalty/v1/programs/{id}/members
+    - openapi/_original/splio-customer-platform-openapi.json#PATCH /loyalty/members/{id}
+    - openapi/_original/splio-customer-platform-openapi.json#POST /loyalty/members
+  reward:
+    path_segment:
+    - rewards
+    properties:
+      id: external_id
+      description: description
+      name: name
+      image_url: image_url
+    core_coverage: 0.429
+    evidence:
+    - openapi/_original/splio-customer-platform-openapi.json#GET /data/fields/rewards
+    - openapi/_original/splio-customer-platform-openapi.json#GET /loyalty/v1/rewards/{id}
+    - openapi/_original/splio-customer-platform-openapi.json#GET /loyalty/v2/contacts/{id}/rewards
+    - openapi/_original/splio-customer-platform-openapi.json#GET /loyalty/v2/rewards
+    - openapi/_original/splio-customer-platform-openapi.json#PATCH /loyalty/v1/rewards/{id}
