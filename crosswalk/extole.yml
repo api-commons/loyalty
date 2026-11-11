@@ -14,12 +14,12 @@ concepts:
     path_segment:
     - rewards
     properties:
-      created_at:
-      - created_at
-      - created_date
       id:
       - reward_id
       - id
+      created_at:
+      - created_at
+      - created_date
       status: state
       name: name
       updated_at: updated_date

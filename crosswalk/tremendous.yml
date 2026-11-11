@@ -8,10 +8,10 @@ concepts:
     - members
     properties:
       id: id
-      status: status
       email: email
+      status: status
       name: name
-    core_coverage: 0.0
+    core_coverage: 1.0
     evidence:
     - openapi/_original/tremendous-api-openapi.yml#GET /members
     - openapi/_original/tremendous-api-openapi.yml#POST /members
@@ -19,8 +19,8 @@ concepts:
     path_segment:
     - rewards
     properties:
-      created_at: created_at
       id: id
+      created_at: created_at
       status: status
     core_coverage: 0.429
     evidence:

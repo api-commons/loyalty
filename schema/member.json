@@ -7,13 +7,35 @@
   "properties": {
     "id": {
       "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.417,
-      "x-commons-providers": 5,
+      "x-commons-tier": "core",
+      "x-commons-share": 0.583,
+      "x-commons-providers": 7,
       "x-commons-spellings": [
         "id",
         "externalId",
         "@id"
+      ]
+    },
+    "email": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.417,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "email"
+      ],
+      "format": "email"
+    },
+    "member_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.417,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "customer_id",
+        "user_id",
+        "memberId",
+        "contact_id"
       ]
     },
     "status": {
@@ -26,27 +48,17 @@
         "isActive"
       ]
     },
-    "email": {
+    "created_at": {
       "type": "string",
       "x-commons-tier": "extended",
       "x-commons-share": 0.333,
       "x-commons-providers": 4,
       "x-commons-spellings": [
-        "email"
+        "created_at",
+        "joinedAt",
+        "enrolled_at"
       ],
-      "format": "email"
-    },
-    "member_id": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.333,
-      "x-commons-providers": 4,
-      "x-commons-spellings": [
-        "user_id",
-        "memberId",
-        "contact_id",
-        "customer_id"
-      ]
+      "format": "date-time"
     },
     "name": {
       "type": "string",
@@ -58,18 +70,6 @@
         "name"
       ]
     },
-    "created_at": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.25,
-      "x-commons-providers": 3,
-      "x-commons-spellings": [
-        "created_at",
-        "joinedAt",
-        "enrolled_at"
-      ],
-      "format": "date-time"
-    },
     "metadata": {
       "type": "object",
       "x-commons-tier": "extended",
@@ -78,6 +78,16 @@
       "x-commons-spellings": [
         "metadata",
         "custom_fields"
+      ]
+    },
+    "points": {
+      "type": "integer",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "balance",
+        "pointsBalance"
       ]
     },
     "tier_id": {

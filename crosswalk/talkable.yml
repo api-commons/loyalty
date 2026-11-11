@@ -24,7 +24,8 @@ concepts:
   referral:
     path_segment:
     - referral
-    properties: {}
+    properties:
+      status: status
     core_coverage: 0.0
     evidence:
     - openapi/_original/talkable-v2-openapi-original.yml#PUT /api/v2/origins/{origin_slug}/referral

@@ -58,8 +58,8 @@ duplicates:
 findings:
   - "A reward agrees on name, type, status, description and dates: what can be redeemed is
     shared across loyalty platforms, card-linked offer networks and incentive tools."
-  - "A member agrees on nothing outright. Square's loyalty accounts, Starbucks' star balances
-    and Smile's customers each carry the points balance and the tier in their own shape."
+  - "A member agrees only on an id: Square's loyalty accounts, Starbucks' star balances and
+    Smile's customers each carry the points balance and the tier in their own shape."
   - "Points are a balance on the member far more often than a resource of their own, and tiers
     a field rather than a list (4 and 2 providers)."
 decisions:

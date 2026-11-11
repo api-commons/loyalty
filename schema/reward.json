@@ -5,6 +5,20 @@
   "description": "The common reward in Loyalty, distilled from 10 providers' own OpenAPI. Each property records the share of them that declare it.",
   "type": "object",
   "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "id",
+        "reward_id",
+        "uuid",
+        "rewardId",
+        "@id",
+        "external_id"
+      ]
+    },
     "created_at": {
       "type": "string",
       "x-commons-tier": "core",
@@ -18,20 +32,6 @@
       ],
       "format": "date-time"
     },
-    "id": {
-      "type": "string",
-      "x-commons-tier": "core",
-      "x-commons-share": 0.9,
-      "x-commons-providers": 9,
-      "x-commons-spellings": [
-        "id",
-        "reward_id",
-        "uuid",
-        "rewardId",
-        "@id",
-        "external_id"
-      ]
-    },
     "status": {
       "type": "string",
       "x-commons-tier": "core",
@@ -40,6 +40,18 @@
       "x-commons-spellings": [
         "status",
         "state"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.7,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "type",
+        "category",
+        "reward_type",
+        "@type"
       ]
     },
     "description": {
@@ -61,18 +73,6 @@
       "x-commons-spellings": [
         "name",
         "title"
-      ]
-    },
-    "type": {
-      "type": "string",
-      "x-commons-tier": "core",
-      "x-commons-share": 0.5,
-      "x-commons-providers": 5,
-      "x-commons-spellings": [
-        "type",
-        "category",
-        "reward_type",
-        "@type"
       ]
     },
     "updated_at": {
@@ -107,6 +107,16 @@
       ],
       "format": "email"
     },
+    "end_date": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.3,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "end_date",
+        "endDate"
+      ]
+    },
     "member_id": {
       "type": "string",
       "x-commons-tier": "extended",
@@ -127,6 +137,16 @@
         "points",
         "amount",
         "pointsAmount"
+      ]
+    },
+    "start_date": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.3,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "start_date",
+        "startDate"
       ]
     }
   },

@@ -12,9 +12,9 @@ generated. Every number below is a count of providers.
 <!-- commons:summary -->
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
-| member | 14 | 12 |  | members 11, accounts 2, member 1 |
-| reward | 11 | 10 | created_at 90%, id 90%, status 80%, description 50%, name 50%, type 50%, updated_at 50% | rewards 10, reward 3, offers 3, redemptions 3 |
-| referral | 7 | 7 |  | referrals 5, referral 3, advocates 1 |
+| member | 14 | 12 | id 58% | members 11, accounts 2, member 1 |
+| reward | 11 | 10 | id 100%, created_at 90%, status 80%, type 70%, description 50%, name 50%, updated_at 50% | rewards 10, reward 3, offers 3, redemptions 3 |
+| referral | 7 | 7 | id 57% | referrals 5, referral 3, advocates 1 |
 
 Cohort: 77 providers with harvested OpenAPI, 17 crosswalks. Of the providers exposing a member: 43% create, 71% list, 50% fetch, 21% update, 7% delete. Generated 2026-11-10 by build.py.
 <!-- /commons:summary -->
@@ -25,7 +25,7 @@ extended tier and the long tail of every concept are in [profile.yml](profile.ym
 ## What the measurement shows
 
 - A reward agrees on name, type, status, description and dates: what can be redeemed is shared across loyalty platforms, card-linked offer networks and incentive tools.
-- A member agrees on nothing outright. Square's loyalty accounts, Starbucks' star balances and Smile's customers each carry the points balance and the tier in their own shape.
+- A member agrees only on an id: Square's loyalty accounts, Starbucks' star balances and Smile's customers each carry the points balance and the tier in their own shape.
 - Points are a balance on the member far more often than a resource of their own, and tiers a field rather than a list (4 and 2 providers).
 
 ## Artifacts

@@ -10,6 +10,6 @@ concepts:
       id: id
       status: status
       tier_id: tier
-    core_coverage: 0.0
+    core_coverage: 1.0
     evidence:
     - openapi/_original/starbucks-starbucks-api-openapi.yml#GET /v1/loyalty/accounts/{accountId}

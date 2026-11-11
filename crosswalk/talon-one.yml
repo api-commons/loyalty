@@ -8,9 +8,9 @@ concepts:
     - referrals
     - referral
     properties:
-      created_at: created
       id: id
-    core_coverage: 0.0
+      created_at: created
+    core_coverage: 1.0
     evidence:
     - openapi/_original/talon-one-integration-api-openapi.yml#POST /v1/referrals
     - openapi/_original/talon-one-management-api-openapi.yml#DELETE /v1/applications/{applicationId}/campaigns/{campaignId}/referrals/{referralId}

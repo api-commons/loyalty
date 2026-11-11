@@ -60,14 +60,31 @@ concepts:
       tier: long-tail
     properties:
     - name: id
-      tier: extended
-      providers: 5
-      share: 0.417
+      tier: core
+      providers: 7
+      share: 0.583
       type: string
       spellings:
       - id
       - externalId
       - '@id'
+    - name: email
+      tier: extended
+      providers: 5
+      share: 0.417
+      type: string
+      spellings:
+      - email
+    - name: member_id
+      tier: extended
+      providers: 5
+      share: 0.417
+      type: string
+      spellings:
+      - customer_id
+      - user_id
+      - memberId
+      - contact_id
     - name: status
       tier: extended
       providers: 5
@@ -76,23 +93,15 @@ concepts:
       spellings:
       - status
       - isActive
-    - name: email
+    - name: created_at
       tier: extended
       providers: 4
       share: 0.333
       type: string
       spellings:
-      - email
-    - name: member_id
-      tier: extended
-      providers: 4
-      share: 0.333
-      type: string
-      spellings:
-      - user_id
-      - memberId
-      - contact_id
-      - customer_id
+      - created_at
+      - joinedAt
+      - enrolled_at
     - name: name
       tier: extended
       providers: 4
@@ -101,15 +110,6 @@ concepts:
       spellings:
       - displayName
       - name
-    - name: created_at
-      tier: extended
-      providers: 3
-      share: 0.25
-      type: string
-      spellings:
-      - created_at
-      - joinedAt
-      - enrolled_at
     - name: metadata
       tier: extended
       providers: 3
@@ -118,6 +118,14 @@ concepts:
       spellings:
       - metadata
       - custom_fields
+    - name: points
+      tier: extended
+      providers: 3
+      share: 0.25
+      type: integer
+      spellings:
+      - balance
+      - pointsBalance
     - name: tier_id
       tier: extended
       providers: 3
@@ -125,25 +133,28 @@ concepts:
       type: string
       spellings:
       - tier
-    long_tail_count: 46
+    long_tail_count: 51
     long_tail_sample:
     - lifetime_points
-    - points
     - program_id
+    - role
     - updated_at
     - allow_digital_card_creation
     - birthday
     - card_code
     - card_expire_at
+    - club_id
     - community_id
     - context
     - credit_balance
     - custom_properties
     - custom_segment_id
     - custom_segment_member_id
+    - donation_intervals
     - error_code
     - error_msg
     - expiring_point_deadlines
+    - first_name
     - forced_tier_name
     - hydra_first
     - hydra_last
@@ -154,6 +165,7 @@ concepts:
     - idempotency_key
     - join_date
     - last_active_at
+    - last_name
     - lifetime_credits
     - live_mode
     - loyalty_account
@@ -162,11 +174,7 @@ concepts:
     - member_name
     - member_since
     - payload
-    - privacy_policy_url
-    - program_joined_at
-    - program_memberships
-    - referral_code
-    - response
+    - phone
   reward:
     segments_seen:
       rewards: 10
@@ -210,6 +218,18 @@ concepts:
       share: 0.091
       tier: long-tail
     properties:
+    - name: id
+      tier: core
+      providers: 10
+      share: 1.0
+      type: string
+      spellings:
+      - id
+      - reward_id
+      - uuid
+      - rewardId
+      - '@id'
+      - external_id
     - name: created_at
       tier: core
       providers: 9
@@ -220,18 +240,6 @@ concepts:
       - creationDate
       - created_date
       - createdAt
-    - name: id
-      tier: core
-      providers: 9
-      share: 0.9
-      type: string
-      spellings:
-      - id
-      - reward_id
-      - uuid
-      - rewardId
-      - '@id'
-      - external_id
     - name: status
       tier: core
       providers: 8
@@ -240,6 +248,16 @@ concepts:
       spellings:
       - status
       - state
+    - name: type
+      tier: core
+      providers: 7
+      share: 0.7
+      type: string
+      spellings:
+      - type
+      - category
+      - reward_type
+      - '@type'
     - name: description
       tier: core
       providers: 5
@@ -257,16 +275,6 @@ concepts:
       spellings:
       - name
       - title
-    - name: type
-      tier: core
-      providers: 5
-      share: 0.5
-      type: string
-      spellings:
-      - type
-      - category
-      - reward_type
-      - '@type'
     - name: updated_at
       tier: core
       providers: 5
@@ -291,6 +299,14 @@ concepts:
       type: string
       spellings:
       - email
+    - name: end_date
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - end_date
+      - endDate
     - name: member_id
       tier: extended
       providers: 3
@@ -309,24 +325,35 @@ concepts:
       - points
       - amount
       - pointsAmount
-    long_tail_count: 231
+    - name: start_date
+      tier: extended
+      providers: 3
+      share: 0.3
+      type: string
+      spellings:
+      - start_date
+      - startDate
+    long_tail_count: 281
     long_tail_sample:
     - campaign_id
+    - code
     - coupons
-    - end_date
     - expires_at
     - notifications
     - order_id
     - points_cost
     - quantity
     - reward_value
-    - start_date
+    - tags
     - access_token
     - account
     - achievement_id
     - action
     - action_id
     - actions
+    - amount_reward_threshold
+    - audience
+    - audience_logical_operator
     - authentication_token
     - auto_generated
     - body_hashed
@@ -336,21 +363,18 @@ concepts:
     - card_number
     - card_title
     - cart
+    - cashback_reward_type
     - cause_event_id
     - cc_last4
     - challenge_id
     - channel
+    - checklist_task_name
     - claim_button_label
     - claims
     - client
     - client_id
-    - client_points_settings
-    - code
-    - community_id
-    - container
-    - context
-    - controlled_by
-    - coupon_points_setting_type
+    - client_points_setting_locales
+    - collections
   referral:
     segments_seen:
       referrals: 5
@@ -384,6 +408,13 @@ concepts:
       share: 0.143
       tier: long-tail
     properties:
+    - name: id
+      tier: core
+      providers: 4
+      share: 0.571
+      type: string
+      spellings:
+      - id
     - name: created_at
       tier: extended
       providers: 3
@@ -392,25 +423,40 @@ concepts:
       spellings:
       - created
       - creationDate
-    - name: id
+    - name: status
       tier: extended
       providers: 3
       share: 0.429
       type: string
       spellings:
-      - id
-    long_tail_count: 82
+      - status
+      - isActive
+    long_tail_count: 117
     long_tail_sample:
     - code
     - referee_email
-    - status
     - updated_at
+    - achievements
+    - activation_date
     - advocate_profile_integration_id
+    - audience
+    - audience_logical_operator
+    - audience_type
     - avatar_remote_url
     - batch_id
+    - behaviour_id
+    - campaign_budget
     - campaign_id
-    - challenges
+    - card_layout
+    - challenge_behaviour
+    - challenge_children
+    - challenge_events
+    - challenge_order
+    - challenge_tags
+    - checklist_task_name
     - client
+    - client_id
+    - client_points_setting
     - container
     - content
     - customer_referral_link
@@ -423,21 +469,7 @@ concepts:
     - date_user_modified
     - deployment_url
     - dry_run
+    - enum_behavior_type
     - error_code
     - error_msg
     - expiry_date
-    - extra
-    - fb_uid
-    - first_name
-    - fraud_signals
-    - friend_profile_integration_id
-    - friend_to_refer
-    - import_id
-    - is_customer_active
-    - is_deleted
-    - is_feature_enabled
-    - is_gb_enabled
-    - is_referral_active
-    - is_referral_on
-    - last_name
-    - last_update
